@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect("127.0.0.1","root","","thenikki");
+$con = mysqli_connect("thenikki.ckf2zflwymxq.us-east-2.rds.amazonaws.com","admin","Cxhkt1998","azassignment");
 if (!$con)
 {
 	die("Connection Failed:".mysqli_connect_error());
