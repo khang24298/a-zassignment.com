@@ -18620,7 +18620,7 @@ html {
 .home {
   background: url("../images/banner-bg.svg");
   background-repeat-y: no-repeat;
-  background-position: 0 -50px;
+  background-position: 0 -10px;
   padding-top: 103px;
 }
 
@@ -18644,7 +18644,7 @@ html {
 }
 
 .main-banner .banner-title {
-  width: 56%;
+  width: 60%;
 }
 
 @media (max-width: 991px) {
@@ -18937,7 +18937,9 @@ section {
 .owl-theme .owl-nav.disabled + .owl-dots {
   margin-top: 70px;
 }
-
+.owl-theme .owl-dots:last-child {
+  display:none
+}
 @media (max-width: 991px) {
   .owl-theme .owl-nav.disabled + .owl-dots {
     margin-top: 10px;
@@ -19014,5 +19016,8 @@ section {
 .flipster-custom-nav .flipster-custom-nav-item .flipster-custom-nav-link.active {
   background: #f1efef;
 }
-
+.container-footer{
+  width:80vw;
+  margin:0 auto;
+}
 /*# sourceMappingURL=maps/style.css.map */

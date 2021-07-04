@@ -4,7 +4,7 @@ require "../../lib/quantri.php";
 <?php
 $target_dir = "../../upload/images/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-move_uploaded_file($_FILES["fileToUpload"]["name"], $target_file);
+move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
 //Thêm tin tức
 if(isset($_POST["add"])){
     if ( ( $_POST["Title"] != "" ) && ( $_POST["TomTat"] != "" ) && ( $_POST["editor"] != "" ) && ( $_POST["Author"] != "" ) )

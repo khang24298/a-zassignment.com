@@ -233,7 +233,7 @@
 		}
 
 		.rating {
-			width: 90px;
+			float:left;
 			unicode-bidi: bidi-override;
 			direction: rtl;
 			text-align: center;
@@ -246,9 +246,10 @@
 			padding: 0;
 			margin: 0;
 			position: relative;
-			width: 1.1em;
+			width: 1.3em;
 			cursor: pointer;
 			color: #000;
+			font-size: 1.4em;
 		}
 
 		.rating > label:hover,
@@ -329,39 +330,9 @@
 		}
 	</style>
 	</head>
-	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+	<body data-spy="scroll" data-target=".navbar" data-offset="50" style="margin-top:-3em">
 		<div id="mobile-menu-overlay"></div>
-		<nav class="navbar navbar-expand-lg fixed-top">
-			<div class="container">
-				<a class="navbar-brand" href="#"><img src="images/logo.svg" alt="Marshmallow"></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"><i class="mdi mdi-menu"> </i></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-					<div class="d-lg-none d-flex justify-content-between px-4 py-3 align-items-center">
-						<img src="images/logo-dark.svg" class="logo-mobile-menu" alt="logo">
-						<a href="javascript:;" class="close-menu"><i class="mdi mdi-close"></i></a>
-					</div>
-					<ul class="navbar-nav ml-auto align-items-center">
-						<li class="nav-item active">
-							<a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="?p=0">Blog</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="?p=3">About</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="?p=4">Contact</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link btn btn-success" href="tel:0354488880">0354.488.880</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+
 		<div class="page-body-wrapper">
 			<section id="home" class="home">
 				<div class="container">
@@ -371,17 +342,15 @@
 								<div class="d-sm-flex justify-content-between">
 									<div data-aos="zoom-in-up">
 										<div class="banner-title">
-												<h3 class="font-weight-medium">We Help Power
-												Millions Of Businesses 
-												in 100+ Countries
-											</h3>
+											<h3 class="font-weight-medium">A-ZASSIGNMENT</h3>
 										</div>
-										<p class="mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+										<p class="mt-3">Dịch vụ hỗ trợ viết học thuật tiếng Anh 24/7 
+ 
 
 											<br>
-											Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+											- Giải pháp hiệu quả cho tất cả các bài tập liên quan đến Tiếng Anh của bạn!
 										</p>
-										<a href="#" class="btn btn-secondary mt-3">Learn more</a>
+										<a href="#" class="btn btn-secondary mt-3">Chi tiết</a>
 									</div>
 									<div class="mt-5 mt-lg-0">
 										<img src="images/group.png" alt="marsmello" class="img-fluid" data-aos="zoom-in-up">
@@ -396,76 +365,53 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
-							<h5 class="text-dark">We’re offering</h5>
-							<h3 class="font-weight-medium text-dark mb-5">Creative Digital Agency</h3>
+							<h3 class="font-weight-medium text-dark mb-5">Dịch vụ</h3>
 						</div>
 					</div>
 					<div class="row" data-aos="fade-up">
-						<div class="col-sm-4 text-center text-lg-left">
+						<div class="col-md-6 text-center text-lg-left">
 							<div class="services-box" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
 								<img src="images/integrated-marketing.svg" alt="integrated-marketing" data-aos="zoom-in">
-								<h6 class="text-dark mb-3 mt-4 font-weight-medium">Integrated 
-									Marketing
+								<h6 class="text-dark mb-3 mt-4 font-weight-medium">Assignment/Essay/Presentation
 								</h6>
-								<p>Lorem ipsum dolor sit amet, 
-									pretium pretium tempor.Lorem ipsum 
+								<p>Hãy cho chúng tôi biết bạn có deadline gì, chúng tôi sẽ hỗ trợ bạn một cách tận tâm nhất. Bạn không còn phải quan tâm đến deadline nữa, hãy để AZA lo.
+
 								</p>
 							</div>
 						</div>
-						<div class="col-sm-4 text-center text-lg-left">
-							<div class="services-box"   data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-								<img src="images/design-development.svg" alt="design-development" data-aos="zoom-in">
-								<h6 class="text-dark mb-3 mt-4 font-weight-medium">Design & 
-									Development
-								</h6>
-								<p>Lorem ipsum dolor sit amet, 
-									pretium pretium tempor.Lorem ipsum 
-								</p>
-							</div>
-						</div>
-						<div class="col-sm-4 text-center text-lg-left">
+						
+						<div class="col-md-6 text-center text-lg-left">
 							<div class="services-box" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
 								<img src="images/digital-strategy.svg" alt="digital-strategy" data-aos="zoom-in">
-								<h6 class="text-dark mb-3 mt-4 font-weight-medium">Digital 
-									Strategy
+								<h6 class="text-dark mb-3 mt-4 font-weight-medium">K-12 Homework/Assignment
+
 								</h6>
-								<p>Lorem ipsum dolor sit amet, 
-									pretium pretium tempor.Lorem ipsum 
+								<p>Không chỉ hỗ trợ bạn, chúng tôi còn có thể giúp đỡ người thân và bạn bè của bạn. Hãy giới thiệu chúng tôi, đây sẽ là món quà tuyệt vời nhất bạn dành cho họ
+
 								</p>
 							</div>
 						</div>
 					</div>
 					<div class="row" data-aos="fade-up">
-						<div class="col-sm-4 text-center text-lg-left">
-							<div class="services-box  pb-lg-0" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-								<img src="images/digital-marketing.svg" alt="digital-marketing" data-aos="zoom-in">
-								<h6 class="text-dark mb-3 mt-4 font-weight-medium">Digital 
-									Marketing
-								</h6>
-								<p>Lorem ipsum dolor sit amet, 
-									pretium pretium tempor.Lorem ipsum 
-								</p>
-							</div>
-						</div>
-						<div class="col-sm-4 text-center text-lg-left">
+						<div class="col-md-6 text-center text-lg-left">
 							<div class="services-box pb-lg-0" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
 								<img src="images/growth-strategy.svg" alt="growth-strategy" data-aos="zoom-in">
-								<h6 class="text-dark mb-3 mt-4 font-weight-medium">Growth 
-									Strategy
+								<h6 class="text-dark mb-3 mt-4 font-weight-medium">Thesis/Dissertation
+
 								</h6>
-								<p>Lorem ipsum dolor sit amet, 
-									pretium pretium tempor.Lorem ipsum 
+								<p>Đây là những bài tập lớn và quan trọng đúng không nào. Chúng tôi sẽ đồng hành cũng bạn để giải quyết chúng, đừng lo!
+
 								</p>
 							</div>
 						</div>
-						<div class="col-sm-4 text-center text-lg-left">
+						<div class="col-md-6 text-center text-lg-left">
 							<div class="services-box pb-0" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
 								<img src="images/saving-strategy.svg" alt="saving-strategy" data-aos="zoom-in">
-								<h6 class="text-dark mb-3 mt-4 font-weight-medium">Saving 
-									Strategy
+								<h6 class="text-dark mb-3 mt-4 font-weight-medium">Online exam/Test/Quiz
+
 								</h6>
-								<p>Lorem ipsum dolor sit amet, 
-									pretium pretium tempor.Lorem ipsum 
+								<p>Bây giờ bạn có thể ngủ yên giấc khi ngày thi đến gần rồi đó. Chúng tôi sẽ giúp bạn đạt được điểm số mong muốn.
+
 								</p>
 							</div>
 						</div>
@@ -476,23 +422,29 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-6" data-aos="fade-up">
-							<h5 class="text-dark">Our work process</h5>
-							<h3 class="font-weight-medium text-dark">Discover New Idea With Us!</h3>
-							<h5 class="text-dark mb-3">Imagination will take us everywhere</h5>
-							<p class="font-weight-medium mb-4">Lorem ipsum dolor sit amet, <br> 
-								pretium pretium tempor.Lorem ipsum dolor sit amet, consectetur
+							<h3 class="font-weight-medium text-dark">Tại sao lại chọn A-ZA?</h3>
+							<p class="font-weight-medium mb-4">A-Z Assignment cam kết mang lại chất lượng phục vụ tốt nhất. 
+								<br>Các sản phẩm viết 100% độc nhất. Đảm bảo bảo hành nếu có lỗi Plagiarism đến khi khách hàng hài lòng.
 							</p>
-							<div class="d-flex justify-content-start mb-3">
+							<div class="d-flex justify-content-start mb-1">
 								<img src="images/tick.png" alt="tick" class="mr-3 tick-icon"  >
-								<p class="mb-0">Lorem ipsum dolor sit amet, pretium pretium</p>
+								<p class="mb-0">Không Đạo văn</p>
 							</div>
-							<div class="d-flex justify-content-start mb-3">
+							<div class="d-flex justify-content-start mb-1">
 								<img src="images/tick.png" alt="tick" class="mr-3 tick-icon"  >
-								<p class="mb-0">Lorem ipsum dolor sit amet, pretium pretium</p>
+								<p class="mb-0">Uy tín</p>
 							</div>
-							<div class="d-flex justify-content-start">
+							<div class="d-flex justify-content-start mb-1">
 								<img src="images/tick.png" alt="tick" class="mr-3 tick-icon"  >
-								<p class="mb-0">Lorem ipsum dolor sit amet, pretium pretium</p>
+								<p class="mb-0">Chuyên nghiệp</p>
+							</div>
+							<div class="d-flex justify-content-start mb-1">
+								<img src="images/tick.png" alt="tick" class="mr-3 tick-icon"  >
+								<p class="mb-0">Bảo mật</p>
+							</div>
+							<div class="d-flex justify-content-start mb-1">
+								<img src="images/tick.png" alt="tick" class="mr-3 tick-icon"  >
+								<p class="mb-0">Giá cả tốt nhất thị trường</p>
 							</div>
 						</div>
 						<div class="col-sm-6 text-right" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
@@ -506,99 +458,55 @@
 					<div class="row mb-5">
 						<div class="col-sm-12">
 							<div class="d-sm-flex justify-content-between align-items-center mb-2">
-								<h3 class="font-weight-medium text-dark ">Let's See Our Latest Project</h3>
-								<div><a href="#" class="btn btn-outline-primary">View more</a></div>
+								<h3 class="font-weight-medium text-dark ">A-ZA luôn sẵn sàng hỗ trợ bạn</h3>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="mb-5" data-aos="fade-up">
 					<div class="owl-carousel-projects owl-carousel owl-theme">
+						<?php 
+						$feedbacks = getFeedbacks();
+						while ($feed = mysqli_fetch_array($feedbacks)){
+						?>
 						<div class="item">
-							<img src="images/carousel/slider1.jpg" alt="slider">
+							<img src="<?php echo $feed['urlImage']?>" alt="slider">
 						</div>
-						<div class="item">
-							<img src="images/carousel/slider2.jpg" alt="slider">
-						</div>
-						<div class="item">
-							<img src="images/carousel/slider3.jpg" alt="slider">
-						</div>
-						<div class="item">
-							<img src="images/carousel/slider4.jpg" alt="slider">
-						</div>
-						<div class="item">
-							<img src="images/carousel/slider5.jpg" alt="slider">
-						</div>
-						<div class="item">
-							<img src="images/carousel/slider1.jpg" alt="slider">
-						</div>
-						<div class="item">
-							<img src="images/carousel/slider2.jpg" alt="slider">
-						</div>
-						<div class="item">
-							<img src="images/carousel/slider3.jpg" alt="slider">
-						</div>
-						<div class="item">
-							<img src="images/carousel/slider4.jpg" alt="slider">
-						</div>
-						<div class="item">
-							<img src="images/carousel/slider5.jpg" alt="slider">
-						</div>
-						<div class="item">
-							<img src="images/carousel/slider1.jpg" alt="slider">
-						</div>
-						<div class="item">
-							<img src="images/carousel/slider2.jpg" alt="slider">
-						</div>
-						<div class="item">
-							<img src="images/carousel/slider3.jpg" alt="slider">
-						</div>
-						<div class="item">
-							<img src="images/carousel/slider4.jpg" alt="slider">
-						</div>
-						<div class="item">
-							<img src="images/carousel/slider5.jpg" alt="slider">
-						</div>
+						<?php
+						}
+						?>
 					</div>
 				</div>
 				<div class="container">
 					<div class="row pt-5 mt-5 pb-5 mb-5">
-						<div class="col-sm-3">
+						<div class="col-sm-4">
 							<div class="d-flex py-3 my-3 my-lg-0 justify-content-center" data-aos="fade-down">
 								<img src="images/satisfied-client.svg" alt="satisfied-client" class="mr-3">
 								<div>
 									<h4 class="font-weight-bold text-dark mb-0"><span class="scVal">0</span>%</h4>
-									<h5 class="text-dark mb-0">Satisfied clients</h5>
+									<h5 class="text-dark mb-0">Khách hàng hài lòng</h5>
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-3">
+						<div class="col-sm-4">
 							<div class="d-flex py-3 my-3 my-lg-0 justify-content-center" data-aos="fade-up">
 								<img src="images/finished-project.svg" alt="satisfied-client" class="mr-3">
 								<div>
-									<h4 class="font-weight-bold text-dark mb-0"><span class="fpVal">0</span></h4>
-									<h5 class="text-dark mb-0">Finished Project</h5>
+									<h4 class="font-weight-bold text-dark mb-0"><span class="fpVal">0</span>+</h4>
+									<h5 class="text-dark mb-0">Dự án đã hoàn thành</h5>
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-3">
+						<div class="col-sm-4">
 							<div class="d-flex py-3 my-3 my-lg-0 justify-content-center" data-aos="fade-down">
 								<img src="images/team-members.svg" alt="Team Members" class="mr-3">
 								<div>
 									<h4 class="font-weight-bold text-dark mb-0"><span class="tMVal">0</span></h4>
-									<h5 class="text-dark mb-0">Team Members</h5>
+									<h5 class="text-dark mb-0">Thành viên</h5>
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-3">
-							<div class="d-flex py-3 my-3 my-lg-0 justify-content-center" data-aos="fade-up">
-								<img src="images/our-blog-posts.svg" alt="Our Blog Posts" class="mr-3">
-								<div>
-									<h4 class="font-weight-bold text-dark mb-0"><span class="bPVal">0</span></h4>
-									<h5 class="text-dark mb-0">Our Blog Posts</h5>
-								</div>
-							</div>
-						</div>
+						
 					</div>
 				</div>
 			</section>
@@ -606,8 +514,7 @@
 				<div class="container">
 					<div class="row  mt-md-0 mt-lg-4">
 						<div class="col-sm-6 text-white" data-aos="fade-up">
-							<p class="font-weight-bold mb-3">Testimonials</p>
-							<h3 class="font-weight-medium">Our customers are our <br>biggest fans</h3>
+							<h3 class="font-weight-medium">Khách hàng nói về <br> A-ZA</h3>
 							
 						</div>
 						<div class="col-sm-6" data-aos="fade-up">
@@ -651,92 +558,6 @@
 					</div>
 				</div>
 			</section>
-			<section class="clients pt-5 mt-5"  data-aos="fade-up" data-aos-offset="-400">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12">
-							<div class="d-sm-flex justify-content-between align-items-center">
-								<img src="images/deloit.svg" alt="deloit" class="p-2 p-lg-0" data-aos="fade-down"  data-aos-offset="-400">
-								<img src="images/erricson.svg" alt="erricson" class="p-2 p-lg-0" data-aos="fade-up"  data-aos-offset="-400">
-								<img src="images/netflix.svg" alt="netflix" class="p-2 p-lg-0" data-aos="fade-down"  data-aos-offset="-400">
-								<img src="images/instagram.svg" alt="instagram" class="p-2 p-lg-0" data-aos="fade-up"  data-aos-offset="-400">
-								<img src="images/coinbase.svg" alt="coinbase" class="p-2 p-lg-0" data-aos="fade-down"  data-aos-offset="-400">
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="pricing-list" id="plans">
-				<div class="container">
-					<div class="row" data-aos="fade-up" data-aos-offset="-500">
-						<div class="col-sm-12">
-							<div class="d-sm-flex justify-content-between align-items-center mb-2">
-								<div>
-									<h3 class="font-weight-medium text-dark ">Checkout Pricing Plan</h3>
-									<h5 class="text-dark ">Lorem ipsum dolor sit amet, consectetur pretium pretium tempor. Lorem ipsum dolor </h5>
-								</div>
-								<div class="mb-5 mb-lg-0 mt-3 mt-lg-0">
-									<div class="d-flex align-items-center">
-										<p class="mr-2 font-weight-medium monthly text-active check-box-label">Monthly</p>
-										<label class="toggle-switch toggle-switch">
-										<input type="checkbox" checked  id="toggle-switch">
-										<span class="toggle-slider round"></span>
-										</label>
-										<p class="ml-2 font-weight-medium yearly check-box-label">Yearly</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row"  data-aos="fade-up" data-aos-offset="-300">
-						<div class="col-sm-4">
-							<div class="pricing-box">
-								<img src="images/starter.svg" alt="starter">
-								<h6 class="font-weight-medium title-text">Starter Business</h6>
-								<h1 class="text-amount mb-4 mt-2">$23</h1>
-								<ul class="pricing-list">
-									<li>Create a free website</li>
-									<li>Connect Domain</li>
-									<li>Business and ecommerce</li>
-									<li>Idea for smaller professional websites</li>
-									<li>Web space</li>
-								</ul>
-								<a href="#" class="btn btn-outline-primary">Puchase Now</a>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="pricing-box selected">
-								<img src="images/proffessional.svg" alt="starter">
-								<h6 class="font-weight-medium title-text">Professional</h6>
-								<h1 class="text-amount mb-4 mt-2">$45</h1>
-								<ul class="pricing-list">
-									<li>Create a free website</li>
-									<li>Connect Domain</li>
-									<li>Business and ecommerce</li>
-									<li>Idea for smaller professional websites</li>
-									<li>Web space</li>
-								</ul>
-								<a href="#" class="btn btn-primary">Puchase Now</a>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="pricing-box">
-								<img src="images/premium.svg" alt="starter">
-								<h6 class="font-weight-medium title-text">Premium</h6>
-								<h1 class="text-amount mb-4 mt-2">$87</h1>
-								<ul class="pricing-list">
-									<li>Create a free website</li>
-									<li>Connect Domain</li>
-									<li>Business and ecommerce</li>
-									<li>Idea for smaller professional websites</li>
-									<li>Web space</li>
-								</ul>
-								<a href="#" class="btn btn-outline-primary">Puchase Now</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
 			<section class="contactus" id="contact">
 				<div class="container">
 					<div class="row mb-5 pb-5">
@@ -744,8 +565,8 @@
 							<img src="images/contact.jpg" alt="contact" class="img-fluid">
 						</div>
 						<div class="col-sm-7" data-aos="fade-up" data-aos-offset="-500">
-							<h3 class="font-weight-medium text-dark mt-5 mt-lg-0">Review</h3>
-							<h5 class="text-dark mb-5">How about your experience with us?</h5>
+							<h3 class="font-weight-medium text-dark mt-5 mt-lg-0">Trải nghiệm của bạn với A-za như thế nào? </h3>
+							<h5 class="text-dark mb-5">Hãy chia sẻ với chúng tôi!</h5>
 							<form action="admin/reviews/xuly.php" method="POST">
 								<div class="row">
 									<div class="col-sm-6">
@@ -786,6 +607,145 @@
 									</div>
 								</div>
 							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="pricing-list" id="plans">
+				<div class="container">
+					<div class="row" data-aos="fade-up" data-aos-offset="-500">
+						<div class="col-sm-12">
+							<div class="d-sm-flex justify-content-between align-items-center mb-2">
+								<div>
+									<h3 class="font-weight-medium text-dark ">Bảng giá dịch vụ</h3>
+									<h5 class="text-dark ">GIÁ CẢ TỐT NHẤT THỊ TRƯỜNG - UY TÍN - BẢO MẬT</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row"  data-aos="fade-up" data-aos-offset="-300">
+						<div class="col-sm-3">
+							<div class="pricing-box">
+								<img src="images/starter.svg" alt="starter">
+								<h6 class="font-weight-medium title-text">Assignment/Coursework</h6>
+								<h1 class="text-small text-amount mb-4 mt-2">85,000VND-150,000VND/100 words</h1>
+								<ul class="pricing-list text-left">
+								<h5>Mức giá chính xác sẽ phụ thuộc vào:</h5>
+									<li>1. Deadline</li>
+									<li>2. Lĩnh vực viết</li>
+									<li>3. Độ khó của câu hỏi/ đề bài/ đề tài</li>
+									<li>4. Nhu cầu của khách hàng</li>
+								</ul>
+								<a href="#" class="btn btn-outline-primary">Book lịch ngay</a>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="pricing-box selected">
+								<img src="images/proffessional.svg" alt="starter">
+								<h6 class="font-weight-medium title-text">Presentation/powerpoint <br>(bao gồm script nói *)</h6>
+								<h1 class="text-small text-amount mb-4 mt-2">20,000VND-50,000VND/slide</h1>
+								<ul class="pricing-list text-left">
+								<h5>Mức giá chính xác sẽ phụ thuộc vào:</h5>
+									<li>1. Deadline</li>
+									<li>2. Lĩnh vực viết</li>
+									<li>3. Độ khó của câu hỏi/ đề bài/ đề tài</li>
+									<li>4. Nhu cầu của khách hàng</li>
+								</ul>
+								<a href="#" class="btn btn-outline-primary">Book lịch ngay</a>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="pricing-box">
+								<img src="images/premium.svg" alt="starter">
+								<h6 class="font-weight-medium title-text">Thesis/Dissertation</h6>
+								<h1 class="text-small text-amount mb-4 mt-2">100,000VND-200,000VND/100 words</h1>
+								<ul class="pricing-list text-left">
+								<h5>Mức giá chính xác sẽ phụ thuộc vào:</h5>
+									<li>1. Deadline</li>
+									<li>2. Lĩnh vực viết</li>
+									<li>3. Độ khó của câu hỏi/ đề bài/ đề tài</li>
+									<li>4. Nhu cầu của khách hàng</li>
+								</ul>
+								<a href="#" class="btn btn-outline-primary">Book lịch ngay</a>
+								
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="pricing-box">
+								<img src="images/premium.svg" alt="starter">
+								<h6 class="font-weight-medium title-text">Online exam/test/quiz</h6>
+								<ul class="text-small text-amount mb-4 mt-2 text-left ">
+									<li>
+									Test dưới 1 hour: <br>
+									500,000VND - 1,000,000VND
+									</li>
+
+									<li>
+									Test từ 1-2 hours: <br>
+									1,100,000VND - 1,500,000VND
+
+									</li>
+
+									<li>
+									Test trên 2 hours: <br>
+									> 1,600,000VND
+									
+									</li>
+								</ul>
+								<ul class="pricing-list text-left">
+								<h5>Mức giá chính xác sẽ phụ thuộc vào:</h5>
+									<li>1. Deadline</li>
+									<li>2. Lĩnh vực viết</li>
+									<li>3. Độ khó của câu hỏi/ đề bài/ đề tài</li>
+									<li>4. Nhu cầu của khách hàng</li>
+								</ul>
+								<a href="#" class="btn btn-outline-primary">Book lịch ngay</a>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="clients pt-5 mt-5 mb-5"  data-aos="fade-up" data-aos-offset="-400">
+				<div class="container">
+				<h4 class="font-weight-medium title-text border-bottom pb-2">Các lĩnh vực hỗ trợ</h4>
+				<br>
+					<div class="row">
+						<div class="col-sm-12">
+							<ul class="d-sm-flex justify-content-between align-items-center list-unstyled">
+								<li alt="deloit" class="p-2 p-lg-0" data-aos="fade-down"  data-aos-offset="-400">
+								Economics
+								</li>
+								<li alt="erricson" class="p-2 p-lg-0" data-aos="fade-up"  data-aos-offset="-400">
+								Finance
+								</li>
+
+								<li alt="netflix" class="p-2 p-lg-0" data-aos="fade-down"  data-aos-offset="-400">
+								Accounting
+								</li>
+
+								<li alt="instagram" class="p-2 p-lg-0" data-aos="fade-up"  data-aos-offset="-400">
+								Business Management
+								</li>
+
+								<li alt="coinbase" class="p-2 p-lg-0" data-aos="fade-down"  data-aos-offset="-400">
+								Marketing and Communication
+								</li>
+								
+								<li alt="coinbase" class="p-2 p-lg-0" data-aos="fade-up"  data-aos-offset="-400">
+								Public Relation
+								</li>
+
+								<li alt="coinbase" class="p-2 p-lg-0" data-aos="fade-down"  data-aos-offset="-400">
+								Hospitality and Tourism
+								</li>
+
+								<li alt="coinbase" class="p-2 p-lg-0" data-aos="fade-up"  data-aos-offset="-400">
+								...
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -834,88 +794,12 @@
                   </div>
                </div>
         </div>
-		<footer class="footer">
-			<div class="footer-top">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-6">
-							<address>
-								<p>143 castle road 517</p>
-								<p class="mb-4">district, kiyev port south Canada</p>
-								<div class="d-flex align-items-center">
-									<p class="mr-4 mb-0">+3 123 456 789</p>
-									<a href="mailto:info@yourmail.com" class="footer-link">info@yourmail.com</a>
-								</div>
-								<div class="d-flex align-items-center">
-									<p class="mr-4 mb-0">+1 222 345 342</p>
-									<a href="mailto:Marshmallow@yourmail.com" class="footer-link">Marshmallow@yourmail.com</a>
-								</div>
-							</address>
-							<div class="social-icons">
-								<h6 class="footer-title font-weight-bold">
-									Social Share
-								</h6>
-								<div class="d-flex">
-									<a href="#"><i class="mdi mdi-github-circle"></i></a>
-									<a href="#"><i class="mdi mdi-facebook-box"></i></a>
-									<a href="#"><i class="mdi mdi-twitter"></i></a>
-									<a href="#"><i class="mdi mdi-dribbble"></i></a>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6">
-							<div class="row">
-								<div class="col-sm-4">
-									<h6 class="footer-title">Social Share</h6>
-									<ul class="list-footer">
-										<li><a href="#" class="footer-link">Home</a></li>
-										<li><a href="#" class="footer-link">About</a></li>
-										<li><a href="#" class="footer-link">Services</a></li>
-										<li><a href="#" class="footer-link">Portfolio</a></li>
-										<li><a href="#" class="footer-link">Contact</a></li>
-									</ul>
-								</div>
-								<div class="col-sm-4">
-									<h6 class="footer-title">Product</h6>
-									<ul class="list-footer">
-										<li><a href="#" class="footer-link">Digital Marketing</a></li>
-										<li><a href="#" class="footer-link">Web Development</a></li>
-										<li><a href="#" class="footer-link">App Development</a></li>
-										<li><a href="#" class="footer-link">Design</a></li>
-									</ul>
-								</div>
-								<div class="col-sm-4">
-									<h6 class="footer-title">Company</h6>
-									<ul class="list-footer">
-										<li><a href="#" class="footer-link">Partners</a></li>
-										<li><a href="#" class="footer-link">Investors</a></li>
-										<li><a href="#" class="footer-link">Partners</a></li>
-										<li><a href="#" class="footer-link">FAQ</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="footer-bottom">
-				<div class="container">
-					<div class="d-flex justify-content-between align-items-center">
-						<div class="d-flex align-items-center">
-							<img src="images/logo.svg" alt="logo" class="mr-3">
-							<p class="mb-0 text-small pt-1">© 2019-2020 <a href="https://www.bootstrapdash.com" class="text-white" target="_blank">BootstrapDash</a>. All rights reserved.</p>
-						</div>
-						<div>
-							<div class="d-flex">
-								<a href="#" class="text-small text-white mx-2 footer-link">Privacy Policy </a>          
-								<a href="#" class="text-small text-white mx-2 footer-link">Customer Support </a>
-								<a href="#" class="text-small text-white mx-2 footer-link">Careers </a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
+		<script type="text/javascript">
+			$("#mobile-menu-overlay, .close-menu, .nav-link").click(function() {
+			$('.collapse').toggleClass('show');
+			$('body').removeClass("sidebar-overlay");
+		});
+		</script>
 		<script src="vendors/base/vendor.bundle.base.js"></script>
 		<script src="vendors/owl.carousel/js/owl.carousel.js"></script>
 		<script src="vendors/aos/js/aos.js"></script>

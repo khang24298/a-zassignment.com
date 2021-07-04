@@ -177,7 +177,7 @@ function storeReview($params)
 			VALUES (null,'$name', '$email','$content','$star',null,null,'$show')
 			";
     require "dbCon.php";
-    mysqli_query($con, $qr);
+    return $result = mysqli_query($con, $qr);
 }
 // Get Rating
 function getReviews()
@@ -227,4 +227,37 @@ function delReview($id)
 	require "dbCon.php";
 	return $result = mysqli_query($con, $qr);
 }
+
+// Get feedbacks
+function getFeedbacks(){
+	$qr = "SELECT * FROM `feedbacks`";
+	require "dbCon.php";
+	return $result = mysqli_query($con, $qr);
+}
+
+// Store Image
+function storeImageFeedback($urlImage){
+	$qr = "INSERT INTO `feedbacks`
+	VALUES(null,'$urlImage',null,null,0)
+	";
+	require "dbCon.php";
+	return $result = mysqli_query($con, $qr);
+}
+
+function updateFeedback($id,$isShow){
+	$qr = "UPDATE `feedbacks`
+			SET isShow = $isShow WHERE id = $id";
+	require "dbCon.php";
+	return $result = mysqli_query($con, $qr);
+}
+
+function delFeedback($id)
+{
+	$qr ="DELETE FROM `feedbacks` 
+		  WHERE id = $id
+		  ";
+	require "dbCon.php";
+	return $result = mysqli_query($con, $qr);
+}
+
 ?>

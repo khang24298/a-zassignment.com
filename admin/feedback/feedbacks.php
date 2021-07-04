@@ -1,51 +1,5 @@
+
 <style>
-.txt-center {
-  text-align: center;
-}
-.hide {
-  display: none;
-}
-
-.clear {
-  float: none;
-  clear: both;
-}
-
-.rating {
-    width: 90px;
-    unicode-bidi: bidi-override;
-    direction: rtl;
-    text-align: center;
-    position: relative;
-}
-
-.rating > label {
-    float: right;
-    display: inline;
-    padding: 0;
-    margin: 0;
-    position: relative;
-    width: 1.1em;
-    cursor: pointer;
-    color: #000;
-}
-
-.rating > label:hover,
-.rating > label:hover ~ label,
-.rating > input.radio-btn:checked ~ label {
-    color: transparent;
-}
-
-.rating > label:hover:before,
-.rating > label:hover ~ label:before,
-.rating > input.radio-btn:checked ~ label:before,
-.rating > input.radio-btn:checked ~ label:before {
-    content: "\2605";
-    position: absolute;
-    left: 0;
-    color: #FFD700;
-}
-
 /* Switch button */
 .switch {
   position: relative;
@@ -113,8 +67,8 @@ input:checked + .slider:before {
     	<div class="col-12 mt-5">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="header-title">Review List</h4>
-                    <a class="btn btn-primary mb-2 float-right" href="?p=reviews&q=add_review">
+                    <h4 class="header-title">Feedbacks List</h4>
+                    <a class="btn btn-primary mb-2 float-right" href="?p=feedback&q=create_feedback">
                         <i class="fa fa-lg fa-plus-square"></i>
                     </a>
                         <div class="data-tables datatable-primary table-responsive">
@@ -125,24 +79,21 @@ input:checked + .slider:before {
                                         Action
                                         </th>
                                         <th scope="col" >Show/Hide</th>
-                                        <th scope="col">Name</th>
-                                        <th scope="col">Email</th>
-                                        <th scope="col">Content</th>
-                                        <th scope="col">Rating</th>
+                                        <th scope="col">Pictures</th>
                                         <th scope="col">Created/Modified</th>
                                         
                                     </tr>
                                 </thead>
                                 <tbody >
                                     <?php
-                                        $reviews = getReviews();
-                                        while ($row = mysqli_fetch_array($reviews)) {
+                                        $feedbacks = getFeedbacks();
+                                        while ($row = mysqli_fetch_array($feedbacks)) {
                                     ?>
                                     <tr class="overflow-hidden">
                                         <td>
                                             <div class="row">
                                                 <i class="ti-trash col-12">
-                                                    <a id="ease" href="javascript:delReview(<?php echo $row['id']?>);">Del</a>
+                                                    <a id="ease" href="javascript:delFeedback(<?php echo $row['id']?>);">Del</a>
                                                 </i>
                                             </div>
                                         </td>
@@ -165,28 +116,7 @@ input:checked + .slider:before {
                                                 </label>
                                             </div>
                                         </td>
-                                        <td><div><?php echo $row['name']?></div></td>
-                                        <td><div><?php echo $row['email']?></div></td>
-                                        <td><text-area rows="3"><?php echo $row['content']?></text-area></td>
-                                        <td>
-                                            <div class="txt-center">
-                                                <form>
-                                                    <div class="rating">
-                                                        <input type="radio" value="5" <?php echo ($row['rating'] == 5) ? 'checked' : ''?> class="radio-btn hide " />
-                                                        <label for="star5" >☆</label>
-                                                        <input  type="radio" value="4" <?php echo ($row['rating'] == 4) ? 'checked' : ''?> class="radio-btn hide"/>
-                                                        <label for="star4" >☆</label>
-                                                        <input  type="radio" value="3" <?php echo ($row['rating'] == 3) ? 'checked' : ''?> class="radio-btn hide" />
-                                                        <label for="star3" >☆</label>
-                                                        <input type="radio" value="2" <?php echo ($row['rating'] == 2) ? 'checked' : ''?> class="radio-btn hide" />
-                                                        <label for="star2" >☆</label>
-                                                        <input  type="radio" value="1" <?php echo ($row['rating'] == 1) ? 'checked' : ''?> class="radio-btn hide" />
-                                                        <label for="star1" >☆</label>
-                                                        <div class="clear"></div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </td>
+                                        <td><img src="<?php echo $row['urlImage']?>"/></td>
                                         <td><div><?php echo $row['created_at']?></div></td>
                                         
                                     </tr>
@@ -212,13 +142,11 @@ input:checked + .slider:before {
             isShow = 0;
         }
         $.ajax({
-            url: 'reviews/xuly.php',
+            url: 'feedback/upload.php',
             type: 'POST',
             data: {
                 id: id,
-                params:{
-                    isShow: isShow,
-                }
+                isShow: isShow,
             },
             success: function (result) {
                 location.reload();
@@ -228,9 +156,10 @@ input:checked + .slider:before {
             }
         });
     });
-    function delReview(id){
+
+    function delFeedback(id){
         $.ajax({
-            url: 'reviews/xuly.php',
+            url: 'feedback/upload.php',
             type: 'POST',
             data: {
                 id: id,
@@ -243,5 +172,4 @@ input:checked + .slider:before {
             }
         });
     }
-
 </script>

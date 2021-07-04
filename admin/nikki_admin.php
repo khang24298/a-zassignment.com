@@ -3,7 +3,7 @@ ob_start();
 session_start();
 if(!(isset($_SESSION["username"])))
 {
-    header("location:../admin/index.php");
+    header("location:../admin/login.php");
 }
 //Import Database
 require "../lib/dbCon.php";
@@ -13,7 +13,7 @@ if(isset($_GET["Logout"]))
 {
     unset($_SESSION["username"]);
     unset($_SESSION["idGroup"]);
-    header("location:../admin/index.php");
+    header("location:../admin/login.php");
 }
 //Default Page
 if(isset($_GET["p"]))
@@ -100,6 +100,9 @@ else $q = "";
                                     <li><a href="?p=tintuc">All Articles</a></li>
                                     <li><a href="?p=tintuc&q=themTinTuc">Add New Article</a></li>
                                 </ul>
+                            </li>
+                            <li>
+                                <a href="?p=feedback"><i class="ti-slice"></i><span>FeedBacks</span></a>
                             </li>
                             <li>
                                 <a href="?p=reviews"><i class="ti-slice"></i><span>Reviews</span></a>
@@ -413,6 +416,18 @@ else $q = "";
                         }
                         break;
                     }
+                    case "feedback":
+                        {
+                            switch($q){
+                                case "create_feedback":
+                                    require "feedback/create_feedback.php";
+                                    break;
+                                default:
+                                    require "feedback/feedbacks.php";
+                                    break;
+                            }
+                            break;
+                        }
                     default: 
                     {
                     require_once "admin.php";
@@ -673,52 +688,6 @@ else $q = "";
             });
         });
     </script>
-    <script type="text/javascript">
-    var isShow;
-    $("input[type=checkbox]").change(function(el) {
-        let id = el.currentTarget.dataset.id
-        console.log(id)
-        if(this.checked) {
-            isShow = 1;
-        }
-        else{
-            isShow = 0;
-        }
-        $.ajax({
-            url: 'reviews/xuly.php',
-            type: 'POST',
-            data: {
-                id: id,
-                params:{
-                    isShow: isShow,
-                }
-            },
-            success: function (result) {
-                location.reload();
-            },
-            error: function (xhr, desc, err) {
-                console.log("error");
-            }
-        });
-    });
-    
-    function delReview(id){
-        $.ajax({
-            url: 'reviews/xuly.php',
-            type: 'POST',
-            data: {
-                id: id,
-            },
-            success: function (result) {
-                location.reload();
-            },
-            error: function (xhr, desc, err) {
-                console.log("error");
-            }
-        });
-    }
-
-    </script>
-  
+ 
 </body>
 </html>

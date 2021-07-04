@@ -197,8 +197,17 @@ function kiemtra_dangki($em){
 // Get Rating
 function getReviews()
 {
-	$qr = "SELECT * FROM `reviews`";
+	$qr = "SELECT * FROM `reviews` 
+			WHERE isShow = 1";
 	require "dbCon.php";
 	return $result = mysqli_query($con, $qr);
 }
+
+// Get feedbacks
+function getFeedbacks(){
+	$qr = "SELECT * FROM `feedbacks` WHERE isShow = 1";
+	require "dbCon.php";
+	return $result = mysqli_query($con, $qr);
+}
+
 ?>

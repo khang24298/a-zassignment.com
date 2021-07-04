@@ -24,36 +24,15 @@
                     <div class="section-heading text-center">
                         <h2>About Us</h2>
                     </div>
-                    <img src="img/blog-img/group.jpg" alt="">
+                    <img src="images/about_us.png" alt="">
                     <br>
-                    <h6 class="text-center">We are FISers from Hanoi University. This is a great chance for us to discover the world outside.</h6>
+                    <h3 class="text-center">ABOUT A-Z ASSIGNMENT</h3>
+                    <h6 class="text-center"> 
+Chúng tôi là những người bạn đã từng trải qua cuộc đời học sinh/sinh viên giống như bạn. Chúng tôi hiểu hơn ai hết những ngày chạy deadline mệt lử và không có chút thời gian làm việc mình muốn. Vì vậy, chúng tôi muốn giúp bạn có nhiều thời gian hơn cho sở thích cá nhân, cho gia đình và cho các dự định to lớn của bạn.
+</h6>
                     <br>
-                    <h4>We are:</h4>
-                    <br>
-                    <div class="row">
-                        <div class="col-12 col-md-3 text-center">
-                            <p>Nguyễn Thị Hương - Leader</p>
-                            <img src="img/blog-img/5.jpg" alt="nguyen-thi-huong">
-                            <p>“Be brave, be kind, be you”</p>
-                        </div>
-                        <div class="col-12 col-md-3 text-center">
-                            <p>Nguyễn Thị Hồng Nhung</p>
-                            <img src="img/blog-img/2.jpg" alt="nguyen-thi-hong-nhung">
-                            <p>“Live life to the fullest”</p>
-                        </div>
-                        <div class="col-12 col-md-3 text-center">
-                            <p>Lê Thu Trang</p>
-                            <img src="img/blog-img/3.jpg" alt="le-thu-trang">
-                            <p>“Don’t let yesterday take up too much of today”</p>
-                        </div>
-                        <div class="col-12 col-md-3 text-center">
-                            <p>Masaki Kurata</p>
-                            <img src="img/blog-img/4.jpg" alt="makaki-kurata">
-                            <p>“I love Vietnam”</p>
-                        </div>
-                    </div>
-                    <br>
-                    <h5 class="text-center">THANK YOU FOR SPENDING YOUR PRECIOUS TIME WITH US</h5>
+                    
+                    <h5 class="text-center">Cảm ơn bạn đã quan tâm, tin tưởng và sử dụng dịch vụ của chúng tôi</h5>
                 </div>
             </div>
         </div>
