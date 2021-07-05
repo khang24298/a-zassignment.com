@@ -3,7 +3,7 @@ ob_start();
 session_start();
 if(!(isset($_SESSION["username"])))
 {
-    header("location:../admin/login.php");
+    header("location:../admin/index.php");
 }
 //Import Database
 require "../lib/dbCon.php";
@@ -13,7 +13,7 @@ if(isset($_GET["Logout"]))
 {
     unset($_SESSION["username"]);
     unset($_SESSION["idGroup"]);
-    header("location:../admin/login.php");
+    header("location:../admin/index.php");
 }
 //Default Page
 if(isset($_GET["p"]))

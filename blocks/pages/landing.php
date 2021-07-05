@@ -342,7 +342,7 @@
 								<div class="d-sm-flex justify-content-between">
 									<div data-aos="zoom-in-up">
 										<div class="banner-title">
-											<h3 class="font-weight-medium">A-ZASSIGNMENT</h3>
+											<h1 class="font-weight-medium" style="font-size:5em">A-ZASSIGNMENT</h1>
 										</div>
 										<p class="mt-3">Dịch vụ hỗ trợ viết học thuật tiếng Anh 24/7 
  
@@ -365,7 +365,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
-							<h3 class="font-weight-medium text-dark mb-5">Dịch vụ</h3>
+							<h1 class="font-weight-medium text-dark mb-5">Dịch vụ</h1>
 						</div>
 					</div>
 					<div class="row" data-aos="fade-up">
@@ -422,7 +422,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-6" data-aos="fade-up">
-							<h3 class="font-weight-medium text-dark">Tại sao lại chọn A-ZA?</h3>
+							<h1 class="font-weight-medium text-dark">Tại sao lại chọn A-ZA?</h1>
 							<p class="font-weight-medium mb-4">A-Z Assignment cam kết mang lại chất lượng phục vụ tốt nhất. 
 								<br>Các sản phẩm viết 100% độc nhất. Đảm bảo bảo hành nếu có lỗi Plagiarism đến khi khách hàng hài lòng.
 							</p>
@@ -458,7 +458,7 @@
 					<div class="row mb-5">
 						<div class="col-sm-12">
 							<div class="d-sm-flex justify-content-between align-items-center mb-2">
-								<h3 class="font-weight-medium text-dark ">A-ZA luôn sẵn sàng hỗ trợ bạn</h3>
+								<h1 class="font-weight-medium text-dark ">A-ZA luôn sẵn sàng hỗ trợ bạn</h1>
 							</div>
 						</div>
 					</div>
@@ -514,7 +514,7 @@
 				<div class="container">
 					<div class="row  mt-md-0 mt-lg-4">
 						<div class="col-sm-6 text-white" data-aos="fade-up">
-							<h3 class="font-weight-medium">Khách hàng nói về <br> A-ZA</h3>
+							<h1 class="font-weight-medium">Khách hàng nói về <br> A-ZA</h1>
 							
 						</div>
 						<div class="col-sm-6" data-aos="fade-up">
@@ -565,7 +565,7 @@
 							<img src="images/contact.jpg" alt="contact" class="img-fluid">
 						</div>
 						<div class="col-sm-7" data-aos="fade-up" data-aos-offset="-500">
-							<h3 class="font-weight-medium text-dark mt-5 mt-lg-0">Trải nghiệm của bạn với A-za như thế nào? </h3>
+							<h1 class="font-weight-medium text-dark mt-5 mt-lg-0">Trải nghiệm của bạn với A-za như thế nào? </h1>
 							<h5 class="text-dark mb-5">Hãy chia sẻ với chúng tôi!</h5>
 							<form action="admin/reviews/xuly.php" method="POST">
 								<div class="row">
@@ -618,7 +618,7 @@
 						<div class="col-sm-12">
 							<div class="d-sm-flex justify-content-between align-items-center mb-2">
 								<div>
-									<h3 class="font-weight-medium text-dark ">Bảng giá dịch vụ</h3>
+									<h1 class="font-weight-medium text-dark ">Bảng giá dịch vụ</h1>
 									<h5 class="text-dark ">GIÁ CẢ TỐT NHẤT THỊ TRƯỜNG - UY TÍN - BẢO MẬT</h5>
 								</div>
 							</div>
@@ -627,7 +627,7 @@
 					<div class="row"  data-aos="fade-up" data-aos-offset="-300">
 						<div class="col-sm-3">
 							<div class="pricing-box">
-								<img src="images/starter.svg" alt="starter">
+								<img src="images/pricing-box-1.png" alt="starter">
 								<h6 class="font-weight-medium title-text">Assignment/Coursework</h6>
 								<h1 class="text-small text-amount mb-4 mt-2">85,000VND-150,000VND/100 words</h1>
 								<ul class="pricing-list text-left">
@@ -637,13 +637,13 @@
 									<li>3. Độ khó của câu hỏi/ đề bài/ đề tài</li>
 									<li>4. Nhu cầu của khách hàng</li>
 								</ul>
-								<a href="#" class="btn btn-outline-primary">Book lịch ngay</a>
+								<a style="position:absolute;right:20%;bottom:5%" href="#" class="btn btn-outline-primary">Book lịch ngay</a>
 							</div>
 						</div>
 						<div class="col-sm-3">
 							<div class="pricing-box selected">
-								<img src="images/proffessional.svg" alt="starter">
-								<h6 class="font-weight-medium title-text">Presentation/powerpoint <br>(bao gồm script nói *)</h6>
+								<img src="images/pricing-box-2.png" alt="starter">
+								<h6 class="font-weight-medium title-text">Presentation/powerpoint <br><span class="font-italic" style="font-size:0.7em">(bao gồm script nói *)</span></h6>
 								<h1 class="text-small text-amount mb-4 mt-2">20,000VND-50,000VND/slide</h1>
 								<ul class="pricing-list text-left">
 								<h5>Mức giá chính xác sẽ phụ thuộc vào:</h5>
@@ -652,12 +652,12 @@
 									<li>3. Độ khó của câu hỏi/ đề bài/ đề tài</li>
 									<li>4. Nhu cầu của khách hàng</li>
 								</ul>
-								<a href="#" class="btn btn-outline-primary">Book lịch ngay</a>
+								<a style="position:absolute;right:20%;bottom:5%" href="#" class="btn btn-outline-primary">Book lịch ngay</a>
 							</div>
 						</div>
 						<div class="col-sm-3">
 							<div class="pricing-box">
-								<img src="images/premium.svg" alt="starter">
+								<img src="images/pricing-box-3.png" alt="starter">
 								<h6 class="font-weight-medium title-text">Thesis/Dissertation</h6>
 								<h1 class="text-small text-amount mb-4 mt-2">100,000VND-200,000VND/100 words</h1>
 								<ul class="pricing-list text-left">
@@ -667,13 +667,13 @@
 									<li>3. Độ khó của câu hỏi/ đề bài/ đề tài</li>
 									<li>4. Nhu cầu của khách hàng</li>
 								</ul>
-								<a href="#" class="btn btn-outline-primary">Book lịch ngay</a>
+								<a style="position:absolute;right:20%;bottom:5%" href="#" class="btn btn-outline-primary">Book lịch ngay</a>
 								
 							</div>
 						</div>
 						<div class="col-sm-3">
 							<div class="pricing-box">
-								<img src="images/premium.svg" alt="starter">
+								<img src="images/pricing-box-4.png" alt="starter">
 								<h6 class="font-weight-medium title-text">Online exam/test/quiz</h6>
 								<ul class="text-small text-amount mb-4 mt-2 text-left ">
 									<li>
@@ -700,7 +700,7 @@
 									<li>3. Độ khó của câu hỏi/ đề bài/ đề tài</li>
 									<li>4. Nhu cầu của khách hàng</li>
 								</ul>
-								<a href="#" class="btn btn-outline-primary">Book lịch ngay</a>
+								<a style="position:absolute;right:20%;bottom:5%" href="#" class="btn btn-outline-primary">Book lịch ngay</a>
 
 							</div>
 						</div>
@@ -710,40 +710,48 @@
 			
 			<section class="clients pt-5 mt-5 mb-5"  data-aos="fade-up" data-aos-offset="-400">
 				<div class="container">
-				<h4 class="font-weight-medium title-text border-bottom pb-2">Các lĩnh vực hỗ trợ</h4>
+				<h1 class="font-weight-medium text-dark border-bottom pb-2">Các lĩnh vực hỗ trợ</h1>
 				<br>
 					<div class="row">
-						<div class="col-sm-12">
+						<div class="col-sm-12 support-area">
 							<ul class="d-sm-flex justify-content-between align-items-center list-unstyled">
 								<li alt="deloit" class="p-2 p-lg-0" data-aos="fade-down"  data-aos-offset="-400">
-								Economics
+									<img src="images/support-economic.png" alt="">
+									<p>Economics</p>
 								</li>
+
 								<li alt="erricson" class="p-2 p-lg-0" data-aos="fade-up"  data-aos-offset="-400">
-								Finance
+									<img src="images/support-finance.png" alt="">
+									<p>Finance</p>
 								</li>
 
 								<li alt="netflix" class="p-2 p-lg-0" data-aos="fade-down"  data-aos-offset="-400">
-								Accounting
+									<img src="images/support-accounting.png" alt="">
+									<p>Accounting</p>
 								</li>
 
 								<li alt="instagram" class="p-2 p-lg-0" data-aos="fade-up"  data-aos-offset="-400">
-								Business Management
+									<img src="images/support-bm.png" alt="">
+									<p>Business Management</p>
 								</li>
 
 								<li alt="coinbase" class="p-2 p-lg-0" data-aos="fade-down"  data-aos-offset="-400">
-								Marketing and Communication
+									<img src="images/support-m&c.png" alt="">
+									<p>Marketing and Communication</p>
 								</li>
 								
 								<li alt="coinbase" class="p-2 p-lg-0" data-aos="fade-up"  data-aos-offset="-400">
-								Public Relation
+									<img src="images/support-public-relation.png" alt="">
+									<p>Public Relation</p>
 								</li>
 
 								<li alt="coinbase" class="p-2 p-lg-0" data-aos="fade-down"  data-aos-offset="-400">
-								Hospitality and Tourism
+									<img src="images/support-h&t.png" alt="">
+									<p>Hospitality and Tourism</p>
 								</li>
 
 								<li alt="coinbase" class="p-2 p-lg-0" data-aos="fade-up"  data-aos-offset="-400">
-								...
+									...
 								</li>
 							</ul>
 						</div>

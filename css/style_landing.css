@@ -18644,7 +18644,7 @@ html {
 }
 
 .main-banner .banner-title {
-  width: 60%;
+  width: 100%;
 }
 
 @media (max-width: 991px) {
@@ -18788,8 +18788,11 @@ section {
   -ms-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
+  height:46em;
 }
-
+.pricing-box img{
+  width:6vw;
+}
 .pricing-box .title-text {
   color: #000000;
 }
@@ -19019,5 +19022,14 @@ section {
 .container-footer{
   width:80vw;
   margin:0 auto;
+}
+.support-area ul li img{
+  width:6vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.support-area ul li p{
+  text-align:center;
 }
 /*# sourceMappingURL=maps/style.css.map */
