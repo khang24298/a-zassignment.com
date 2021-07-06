@@ -195,9 +195,7 @@ function kiemtra_dangki($em){
 }
 function storeReview($params)
 {
-	var_dump($params);
-	echo $now = date('Y-m-d H:i:s');
-	echo "<br>";
+	$now = date('Y-m-d H:i:s');
 	extract($params);
 	if(isset($isShow)){
 		$show = ($isShow == "on" ? 1 : 0);
@@ -208,8 +206,6 @@ function storeReview($params)
 	$qr = "INSERT INTO `reviews`
 			VALUES (null,'$name', '$email','$content','$star','$now','$now','$show')
 			";
-	var_dump($qr);
-	die();
     require "dbCon.php";
     return $result = mysqli_query($con, $qr);
 }
