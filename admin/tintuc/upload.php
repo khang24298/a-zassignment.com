@@ -5,7 +5,7 @@ require "../../lib/quantri.php";
 $target_dir = "../../upload/images/";
 $path = $_FILES['image']['name'];
 $ext = pathinfo($path, PATHINFO_EXTENSION);
-$target_file = $target_dir."blog-img_".round(microtime(true) * 1000).$ext;
+$target_file = $target_dir."blog-img_".round(microtime(true) * 1000).".".$ext;
 move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
 //Thêm tin tức
 if(isset($_POST["add"])){

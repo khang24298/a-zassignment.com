@@ -4,7 +4,7 @@
         $target_dir = "../../upload/images/";
         $path = $_FILES['image']['name'];
         $ext = pathinfo($path, PATHINFO_EXTENSION);
-        $target_file = $target_dir ."fb-img_".round(microtime(true) * 1000).$ext;
+        $target_file = $target_dir ."fb-img_".round(microtime(true) * 1000).".".$ext;
         move_uploaded_file($_FILES["image"]["tmp_name"], $target_file);
         $urlImage=$target_file;
         storeImageFeedback($urlImage);
