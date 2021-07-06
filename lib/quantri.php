@@ -177,7 +177,7 @@ function storeReview($params)
 			VALUES (null,'$name', '$email','$content','$star',null,null,'$show')
 			";
 	var_dump($qr);
-
+	die();
     require "dbCon.php";
     return $result = mysqli_query($con, $qr);
 }
