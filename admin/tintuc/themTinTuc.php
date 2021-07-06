@@ -22,16 +22,15 @@
 							  	<div class="form-group">
 							    	<label for="editor"><b>Content</b></label>
 									<textarea name="editor" id="editor" rows="10" cols="80">
-										This is my textarea to be replaced with CKEditor 4.
+										This is my textarea to be replaced
 									</textarea>
 							  	</div>
                                 <div class="form-group">
                                     <label for="urlHinh"><b>Url_Image</b></label>
-                                    <div class="input-group mb-3 col-3">
-                                        <input class="form-control btn btn-dark" type="file" name="fileToUpload" id="fileToUpload">
+                                    <div class="input-group mb-3 col-6">
+										<input id="ckfinder-input-1" class="form-control" type="text" name="fileToUpload">
+										<button type="button" id="ckfinder-popup-1" class="btn btn-success">Browse Server</button>
                                     </div>
-									<br><img id="myImg" src="#">
-
                                 </div>
 							  	<div class="form-group">
 								    <label class="col-form-label" for="TenTL" id="TenTL"><b>Category Belong</b></label>
@@ -60,27 +59,33 @@
 		</div>
 	</div>
 </div>
-<script type="text/javascript">
-    window.addEventListener('load', function() {
-    document.querySelector('input[name="fileToUpload"]').addEventListener('change', function() {
-        if (this.files && this.files[0]) {
-            var img = document.querySelector('#myImg');
-            img.onload = () => {
-                URL.revokeObjectURL(img.src);  // no longer needed, free memory
-            }
 
-            img.src = URL.createObjectURL(this.files[0]); // set src to blob url
-        }
-    });
-    });
-</script>
-<script>
-    tinymce.init({
-      selector: '#editor',
-	  plugins: 'a11ychecker advcode casechange formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
-      toolbar: 'a11ycheck addcomment showcomments casechange checklist code formatpainter pageembed permanentpen table',
-      toolbar_mode: 'floating',
-      tinycomments_mode: 'embedded',
-      tinycomments_author: 'Author name',
-    });
-</script>
+<script type="text/javascript">
+        CKEDITOR.replace('editor',{
+			filebrowserBrowseUrl: 'ckfinder/ckfinder.html',
+			filebrowserUploadUrl: 'ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files'
+		})
+		var button1 = document.getElementById('ckfinder-popup-1');
+		button1.onclick = function() {
+			selectFileWithCKFinder( 'ckfinder-input-1' );
+		};
+		function selectFileWithCKFinder( elementId ) {
+			CKFinder.popup( {
+				chooseFiles: true,
+				width: 800,
+				height: 600,
+				onInit: function( finder ) {
+					finder.on( 'files:choose', function( evt ) {
+						var file = evt.data.files.first();
+						var output = document.getElementById( elementId );
+						output.value = file.getUrl();
+					} );
+
+					finder.on( 'file:choose:resizedImage', function( evt ) {
+						var output = document.getElementById( elementId );
+						output.value = evt.data.resizedUrl;
+					} );
+				}
+			} );
+		}
+  </script>

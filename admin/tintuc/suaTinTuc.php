@@ -40,9 +40,9 @@
                                 <div class="form-group">
                                     <label for="urlHinh"><b>Url_Image</b></label>
                                     <div class="input-group mb-3">
-                                        <input class="btn btn-dark" type="file" name="fileToUpload" id="fileToUpload">
+										<input id="ckfinder-input-1" class="form-control" type="text" name="fileToUpload" value="<?php echo $tin["urlHinh"] ?>">
+										<button type="button" id="ckfinder-popup-1" class="btn btn-success">Browse Server</button>
                                     </div>
-									<br><img id="myImg" src="<?php echo $row['urlHinh']?>">
 
                                 </div>
 							  	<div class="form-group">
@@ -81,22 +81,33 @@
         display: none;
     }
 </style>
-<script>
-	// Replace the <textarea id="editor1"> with a CKEditor 4
-	// instance, using default configuration.
-	CKEDITOR.replace( 'editor' );
-</script>
+
 <script type="text/javascript">
-    window.addEventListener('load', function() {
-    document.querySelector('input[name="fileToUpload"]').addEventListener('change', function() {
-        if (this.files && this.files[0]) {
-            var img = document.querySelector('#myImg');
-            img.onload = () => {
-                URL.revokeObjectURL(img.src);  // no longer needed, free memory
-            }
-			$('#file').val(this.files[0].name);
-            img.src = URL.createObjectURL(this.files[0]); // set src to blob url
-        }
-    });
-    });
-</script>
+        CKEDITOR.replace('editor',{
+			filebrowserBrowseUrl: 'ckfinder/ckfinder.html',
+			filebrowserUploadUrl: 'ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files'
+		})
+		var button1 = document.getElementById('ckfinder-popup-1');
+		button1.onclick = function() {
+			selectFileWithCKFinder( 'ckfinder-input-1' );
+		};
+		function selectFileWithCKFinder( elementId ) {
+			CKFinder.popup( {
+				chooseFiles: true,
+				width: 800,
+				height: 600,
+				onInit: function( finder ) {
+					finder.on( 'files:choose', function( evt ) {
+						var file = evt.data.files.first();
+						var output = document.getElementById( elementId );
+						output.value = file.getUrl();
+					} );
+
+					finder.on( 'file:choose:resizedImage', function( evt ) {
+						var output = document.getElementById( elementId );
+						output.value = evt.data.resizedUrl;
+					} );
+				}
+			} );
+		}
+  </script>
