@@ -25,9 +25,11 @@
 							  	</div>
                                 <div class="form-group">
                                     <label for="urlHinh"><b>Url_Image</b></label>
-                                    <div class="input-group mb-3">
+                                    <div class="input-group mb-3 col-3">
                                         <input class="form-control btn btn-dark" type="file" name="fileToUpload" id="fileToUpload">
                                     </div>
+									<br><img id="myImg" src="#">
+
                                 </div>
 							  	<div class="form-group">
 								    <label class="col-form-label" for="TenTL" id="TenTL"><b>Category Belong</b></label>
@@ -56,3 +58,17 @@
 		</div>
 	</div>
 </div>
+<script type="text/javascript">
+    window.addEventListener('load', function() {
+    document.querySelector('input[name="fileToUpload"]').addEventListener('change', function() {
+        if (this.files && this.files[0]) {
+            var img = document.querySelector('#myImg');
+            img.onload = () => {
+                URL.revokeObjectURL(img.src);  // no longer needed, free memory
+            }
+
+            img.src = URL.createObjectURL(this.files[0]); // set src to blob url
+        }
+    });
+    });
+</script>

@@ -33,7 +33,7 @@
             <!-- Post Content -->
             <div class="slide-post-content h-100 d-flex align-items-center">
                 <div class="slide-post-text">
-                    <p class="post-date" data-animation="fadeIn" data-delay="100ms"><?php echo $row['Created_at']?> / <?php 
+                    <p class="post-date" data-animation="fadeIn" data-delay="100ms"> <?php 
                     $idTL = $row['idTL']; 
                     $tentl = timTL($idTL);
                     echo $tentl['TenTL']?></p>
@@ -77,9 +77,7 @@
                                 </div>
                                 <!-- Featured Post Content -->
                                 <div class="featured-post-content">
-                                    <p class="post-date"><?php 
-                                    echo $tin1['Created_at'];
-                                    ?> / 
+                                    <p class="post-date"> 
                                        <?php 
                                         $idTL = $tin1['idTL']; 
                                         $tentl = timTL($idTL);    
@@ -123,7 +121,7 @@
                                 </div>
                                 <!-- Content -->
                                 <div class="post-content">
-                                    <p class="post-date"><?php echo $row2['Created_at']?> / 
+                                    <p class="post-date">
                                         <?php
                                             $idTL = $row2['idTL']; 
                                             $tentl2 = timTL($idTL);

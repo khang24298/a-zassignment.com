@@ -22,7 +22,7 @@ capnhatluotxem($idTin);
                     <div class="post-content">
 
                         <div class="text-center mb-50">
-                            <p class="post-date"><?php echo $chitiettin['Created_at']?> / <?php echo $tl['TenTL'] ?></p>
+                            <p class="post-date"><?php echo $tl['TenTL'] ?></p>
                             <h2 class="post-title"><?php echo $chitiettin['Title']?></h2>
                             <!-- Post Meta -->
                             <div class="post-meta">
@@ -50,7 +50,17 @@ capnhatluotxem($idTin);
                                         {
                                             ?>
                                             <li>
-                                                <a <?php if($idTin == $row4['idTin']) echo "style='color:blue;'"?> href="?p=2&idTin=<?php echo $row4['idTin'] ?>"><?php echo $row4['Title'] ?></a>
+                                                <a <?php 
+                                                if($idTin == $row4['idTin'])
+                                                { 
+                                                    echo "style='color:blue!important;'";
+                                                }
+                                                else
+                                                {
+                                                    echo "style='color:#5e5e5e!important;'";
+                                                } 
+                                                ?> 
+                                                href="?p=2&idTin=<?php echo $row4['idTin'] ?>"><?php echo $row4['Title'] ?></a>
                                             </li>
                                             <?php
                                         }
@@ -81,7 +91,7 @@ capnhatluotxem($idTin);
                                             </div>
                                             <!-- Content -->
                                             <div class="post-content">
-                                                <p class="post-date"><?php echo $row['Created_at']?> / <?php echo $tl['TenTL'] ?> </p>
+                                                <p class="post-date"><?php echo $tl['TenTL'] ?> </p>
                                                 <a href="?p=2&idTin=<?php echo $row['idTin']?>" class="post-title">
                                                     <h4><?php echo $row['Title']?></h4>
                                                 </a>

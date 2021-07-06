@@ -41,8 +41,9 @@
                                     <label for="urlHinh"><b>Url_Image</b></label>
                                     <div class="input-group mb-3">
                                         <input class="btn btn-dark" type="file" name="fileToUpload" id="fileToUpload">
-                                        <input class="form-control" type="text" id="file" value="<?php echo $row['urlHinh']?>" readonly >
                                     </div>
+									<br><img id="myImg" src="<?php echo $row['urlHinh']?>">
+
                                 </div>
 							  	<div class="form-group">
 								    <label class="col-form-label" for="TenTL" id="TenTL"><b>Category Belong</b> <?php echo $tin["idTL"] ?></label>
@@ -81,9 +82,16 @@
     }
 </style>
 <script type="text/javascript">
-    $(document).ready(function () {
-            var myFile =  $('#fileToUpload').prop('files');
-            console.log(myFile);
-            $("#file").html("myFile");
+    window.addEventListener('load', function() {
+    document.querySelector('input[name="fileToUpload"]').addEventListener('change', function() {
+        if (this.files && this.files[0]) {
+            var img = document.querySelector('#myImg');
+            img.onload = () => {
+                URL.revokeObjectURL(img.src);  // no longer needed, free memory
+            }
+			$('#file').val(this.files[0].name);
+            img.src = URL.createObjectURL(this.files[0]); // set src to blob url
+        }
+    });
     });
 </script>
