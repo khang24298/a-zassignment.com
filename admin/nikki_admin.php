@@ -57,9 +57,9 @@ else $q = "";
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
     <!-- CKEditor -->
-    <script type="text/javascript" src="ckeditor/ckeditor.js"></script>
-    <!-- CKFinder -->
-    <script type="text/javascript" src="ckfinder/ckfinder.js"></script>
+    <script type="text/javascript" src="ckeditor4/ckeditor.js"></script>
+    <!-- TinyMCE -->
+    <script src="https://cdn.tiny.cloud/1/hx1wpwgh6ekfdixt7m2kcnynyun3tk7hetfrg3ree639uirx/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 </head>
 <body>
     <!--[if lt IE 8]>
@@ -662,9 +662,6 @@ else $q = "";
     <!-- others plugins -->
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/scripts.js"></script>
-    <script>
-    CKEDITOR.replace('editor');
-    </script>
 
     <script type="text/javascript">
         $(document).ready(function () {

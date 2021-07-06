@@ -21,7 +21,9 @@
 							  	</div>
 							  	<div class="form-group">
 							    	<label for="editor"><b>Content</b></label>
-							    	<textarea class="form-control" id="editor" name="editor" rows="10"></textarea>
+									<textarea name="editor" id="editor" rows="10" cols="80">
+										This is my textarea to be replaced with CKEditor 4.
+									</textarea>
 							  	</div>
                                 <div class="form-group">
                                     <label for="urlHinh"><b>Url_Image</b></label>
@@ -70,5 +72,15 @@
             img.src = URL.createObjectURL(this.files[0]); // set src to blob url
         }
     });
+    });
+</script>
+<script>
+    tinymce.init({
+      selector: '#editor',
+	  plugins: 'a11ychecker advcode casechange formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
+      toolbar: 'a11ycheck addcomment showcomments casechange checklist code formatpainter pageembed permanentpen table',
+      toolbar_mode: 'floating',
+      tinycomments_mode: 'embedded',
+      tinycomments_author: 'Author name',
     });
 </script>

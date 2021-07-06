@@ -81,6 +81,11 @@
         display: none;
     }
 </style>
+<script>
+	// Replace the <textarea id="editor1"> with a CKEditor 4
+	// instance, using default configuration.
+	CKEDITOR.replace( 'editor' );
+</script>
 <script type="text/javascript">
     window.addEventListener('load', function() {
     document.querySelector('input[name="fileToUpload"]').addEventListener('change', function() {
