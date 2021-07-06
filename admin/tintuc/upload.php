@@ -3,7 +3,9 @@ require "../../lib/quantri.php";
 ?>
 <?php
 $target_dir = "../../upload/images/";
-$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+$path = $_FILES['image']['name'];
+$ext = pathinfo($path, PATHINFO_EXTENSION);
+$target_file = $target_dir."blog-img_".round(microtime(true) * 1000).$ext;
 move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
 //Thêm tin tức
 if(isset($_POST["add"])){
@@ -14,7 +16,7 @@ if(isset($_POST["add"])){
         $TomTat=check_quotes($_POST["TomTat"]);
         $Content=$_POST["editor"];
         $idTL=$_POST["TenTL"];
-        $urlHinh=basename($_FILES["fileToUpload"]["name"]);
+        $urlHinh=$target_file;
         $Author=check_quotes($_POST["Author"]);
         $ThuTu = $_POST["ThuTu"];
         themTinTuc($Title, $Title_KD, $TomTat, $Content, $idTL, $urlHinh, $Author, $ThuTu);

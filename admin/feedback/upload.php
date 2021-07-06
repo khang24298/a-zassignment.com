@@ -2,9 +2,11 @@
     require "../../lib/quantri.php";
     if (isset($_POST['upload-image'])){
         $target_dir = "../../upload/images/";
-        $target_file = $target_dir . basename($_FILES["image"]["name"]);
+        $path = $_FILES['image']['name'];
+        $ext = pathinfo($path, PATHINFO_EXTENSION);
+        $target_file = $target_dir ."fb-img_".round(microtime(true) * 1000).$ext;
         move_uploaded_file($_FILES["image"]["tmp_name"], $target_file);
-        $urlImage='../upload/images/'.basename($_FILES["image"]["name"]);
+        $urlImage=$target_file;
         storeImageFeedback($urlImage);
         header('location: ../nikki_admin.php?p=feedback');
     }
