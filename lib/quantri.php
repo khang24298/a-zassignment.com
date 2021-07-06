@@ -176,6 +176,8 @@ function storeReview($params)
 	$qr = "INSERT INTO `reviews`
 			VALUES (null,'$name', '$email','$content','$star',null,null,'$show')
 			";
+	var_dump($qr);
+
     require "dbCon.php";
     return $result = mysqli_query($con, $qr);
 }
