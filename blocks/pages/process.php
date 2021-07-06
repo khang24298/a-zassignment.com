@@ -9,7 +9,7 @@
     if(isset($_POST['sendReview'])){
         
         storeReview($_POST);
-        var_dump($_POST);
+        // var_dump($_POST);
         // header("location: /");
     }
 ?>
