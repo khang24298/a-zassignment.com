@@ -196,6 +196,7 @@ function kiemtra_dangki($em){
 function storeReview($params)
 {
 	var_dump($params);
+	echo $now = date('Y-m-d H:i:s');
 	echo "<br>";
 	extract($params);
 	if(isset($isShow)){
@@ -205,7 +206,7 @@ function storeReview($params)
 		$show = 0;
 	}
 	$qr = "INSERT INTO `reviews`
-			VALUES (null,'$name', '$email','$content','$star',null,null,'$show')
+			VALUES (null,'$name', '$email','$content','$star','$now','$now','$show')
 			";
 	var_dump($qr);
 	die();
