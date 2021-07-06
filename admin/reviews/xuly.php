@@ -15,13 +15,6 @@
         storeReview($_POST);
         header("location: ../nikki_admin.php?p=reviews");
     }
-    else if(isset($_POST['sendReview'])){
-        
-        storeReview($_POST);
-        // var_dump(storeReview($_POST));
-        // die();
-        header("location: /");
-    }
 ?>
 <div class="row">
     <div class="col-12 mt-5">

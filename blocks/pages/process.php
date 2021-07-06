@@ -5,6 +5,14 @@
     $user = check_quotes ($_POST["user"]);
     $user_email = check_quotes ($_POST["email"]);
     insert_comments ($user, $user_email, $content, $idTin);
+
+    if(isset($_POST['sendReview'])){
+        
+        storeReview($_POST);
+        // var_dump(storeReview($_POST));
+        // die();
+        header("location: /");
+    }
 ?>
 <h4 class="headline"><?php
     $count = comments ($idTin);

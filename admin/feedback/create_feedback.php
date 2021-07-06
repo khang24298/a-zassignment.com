@@ -5,7 +5,7 @@
             <div class="card">
                 <div class="card-body">
                     <h4 class="header-title">FeedBack Adder</h4>
-                    <form action="feedback/upload.php" method="post" enctype="multipart/form-data">
+                    <form action="/admin/feedback/upload.php" method="post" enctype="multipart/form-data">
                         <label for="image"> Upload your image here</label>
                         <hr>
                         <input type="file" name="image" id="image">

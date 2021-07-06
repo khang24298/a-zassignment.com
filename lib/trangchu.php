@@ -193,7 +193,21 @@ function kiemtra_dangki($em){
 		   ";
 	return $result = mysqli_query($con, $qr);
 }
-
+function storeReview($params)
+{
+	extract($params);
+	if(isset($isShow)){
+		$show = ($isShow == "on" ? 1 : 0);
+	}
+	else{
+		$show = 0;
+	}
+	$qr = "INSERT INTO `reviews`
+			VALUES (null,'$name', '$email','$content','$star',null,null,'$show')
+			";
+    require "dbCon.php";
+    return $result = mysqli_query($con, $qr);
+}
 // Get Rating
 function getReviews()
 {

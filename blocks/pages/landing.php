@@ -567,7 +567,7 @@
 						<div class="col-sm-7" data-aos="fade-up" data-aos-offset="-500">
 							<h1 class="font-weight-medium text-dark mt-5 mt-lg-0">Trải nghiệm của bạn với A-za như thế nào? </h1>
 							<h5 class="text-dark mb-5">Hãy chia sẻ với chúng tôi!</h5>
-							<form action="admin/reviews/xuly.php" method="POST">
+							<form action="/blocks/pages/process.php" method="POST">
 								<div class="row">
 									<div class="col-sm-6">
 										<div class="form-group">
