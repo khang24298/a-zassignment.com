@@ -9,9 +9,8 @@
     if(isset($_POST['sendReview'])){
         
         storeReview($_POST);
-        var_dump(storeReview($_POST));
-        die();
-        header("location: /");
+        var_dump($_POST);
+        // header("location: /");
     }
 ?>
 <h4 class="headline"><?php
