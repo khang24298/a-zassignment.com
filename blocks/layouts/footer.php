@@ -46,7 +46,7 @@
 										<li><a class="footer-link">K-12 Homework/Assignment</a></li>
 									</ul>
 								</div>
-								<div class="col-sm-4">
+								<div class="col-sm-4 pl-5" >
 									<h6 class="footer-title">Company</h6>
 									<ul class="list-footer">
 										<li><a href="#" class="footer-link">Partners</a></li>
