@@ -29,11 +29,15 @@ else $p="";
     <!-- Core Stylesheet -->
     <?php 
             if( isset($p) && in_array($p,['0','1','2','3','4'])){
-                echo "<link rel='stylesheet' href='style.css'>";
-                echo "<link rel='stylesheet' href='css/layout.css'>";
+                ?>
+                    <link rel="stylesheet" href="style.css">";
+                    <link rel="stylesheet" href="css/layout.css">";
+                <?php
             }
             else{
-                echo "<link rel='stylesheet' href='css/style_landing.css'>";
+                ?>
+                <link rel="stylesheet" href="css/style_landing.css">;
+                <?php
             }
         ?>
     

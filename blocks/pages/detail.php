@@ -41,7 +41,7 @@ capnhatluotxem($idTin);
                             <!-- Share -->
 
                                     <ul class="mcd-menu">
-                                        <a style="text-align: left; font-size: 20px; color:orangered" href="?p=1&idTL=<?php echo $chitiettin['idTL'] ?>" class="active">
+                                        <a style="text-align: left; color:orangered" href="?p=1&idTL=<?php echo $chitiettin['idTL'] ?>" class="active">
                                                 <strong><?php echo $tl['TenTL'] ?></strong>
                                             </a>
                                         <?php
@@ -50,7 +50,7 @@ capnhatluotxem($idTin);
                                         {
                                             ?>
                                             <li>
-                                                <a <?php 
+                                                <a class="menu-article" <?php 
                                                 if($idTin == $row4['idTin'])
                                                 { 
                                                     echo "style='color:blue!important;'";
