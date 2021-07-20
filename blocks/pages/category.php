@@ -58,7 +58,7 @@
                                 <div class="single-blog-post mb-50">
                                     <!-- Thumbnail -->
                                     <div class="post-thumbnail">
-                                        <a href="?p=2&idTin=<?php echo $row['idTin']?>"><img src="upload/images/<?php echo $row['urlHinh']?>" alt="<?php echo $row['Title_KD']?>"></a>
+                                        <a href="?p=2&idTin=<?php echo $row['idTin']?>"><img src="<?php echo $row['urlHinh']?>" alt="<?php echo $row['Title_KD']?>"></a>
                                     </div>
                                     <!-- Content -->
                                     <div class="post-content">
@@ -140,7 +140,7 @@
                         ?>
                         <div class="single-latest-post d-flex">
                             <div class="post-thumb">
-                                <img src="upload/images/<?php echo $row3['urlHinh']?>" alt="<?php echo $row3['Title_KD']?>">
+                                <img src="<?php echo $row3['urlHinh']?>" alt="<?php echo $row3['Title_KD']?>">
                             </div>
                             <div class="post-content">
                                 <a href="?p=2&idTin=<?php echo $row3['idTin']?>" class="post-title">
