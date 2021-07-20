@@ -350,7 +350,7 @@
 											<br>
 											- Giải pháp hiệu quả cho tất cả các bài tập liên quan đến Tiếng Anh của bạn!
 										</p>
-										<a href="#" class="btn btn-secondary mt-3">Chi tiết</a>
+										<a href="?p=2&idTin=119" class="btn btn-secondary mt-3">Chi tiết</a>
 									</div>
 									<div class="mt-5 mt-lg-0">
 										<img src="images/group.png" alt="marsmello" class="img-fluid" data-aos="zoom-in-up">
@@ -637,7 +637,7 @@
 									<li>3. Độ khó của câu hỏi/ đề bài/ đề tài</li>
 									<li>4. Nhu cầu của khách hàng</li>
 								</ul>
-								<a style="position:absolute;right:20%;bottom:5%" href="#" class="btn btn-outline-primary">Book lịch ngay</a>
+								<a style="position:absolute;right:20%;bottom:5%" href="https://zalo.me/0354488880" target="_blank" class="btn btn-outline-primary">Book lịch ngay</a>
 							</div>
 						</div>
 						<div class="col-sm-3">
@@ -652,7 +652,7 @@
 									<li>3. Độ khó của câu hỏi/ đề bài/ đề tài</li>
 									<li>4. Nhu cầu của khách hàng</li>
 								</ul>
-								<a style="position:absolute;right:20%;bottom:5%" href="#" class="btn btn-outline-primary">Book lịch ngay</a>
+								<a style="position:absolute;right:20%;bottom:5%" href="https://zalo.me/0354488880" target="_blank" class="btn btn-outline-primary">Book lịch ngay</a>
 							</div>
 						</div>
 						<div class="col-sm-3">
@@ -667,7 +667,7 @@
 									<li>3. Độ khó của câu hỏi/ đề bài/ đề tài</li>
 									<li>4. Nhu cầu của khách hàng</li>
 								</ul>
-								<a style="position:absolute;right:20%;bottom:5%" href="#" class="btn btn-outline-primary">Book lịch ngay</a>
+								<a style="position:absolute;right:20%;bottom:5%" href="https://zalo.me/0354488880" target="_blank" class="btn btn-outline-primary">Book lịch ngay</a>
 								
 							</div>
 						</div>
@@ -700,7 +700,7 @@
 									<li>3. Độ khó của câu hỏi/ đề bài/ đề tài</li>
 									<li>4. Nhu cầu của khách hàng</li>
 								</ul>
-								<a style="position:absolute;right:20%;bottom:5%" href="#" class="btn btn-outline-primary">Book lịch ngay</a>
+								<a style="position:absolute;right:20%;bottom:5%" href="https://zalo.me/0354488880" target="_blank" class="btn btn-outline-primary">Book lịch ngay</a>
 
 							</div>
 						</div>
