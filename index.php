@@ -15,13 +15,13 @@ else $p="";
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="">
+    <meta name="description" content="Dịch vụ hỗ trợ viết học thuật tiếng Anh, tiếng Việt. Giải pháp tối ưu cho tất cả vấn đề học thuật liên quan đến Tiếng Anh, Tiếng Việt của bạn!">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>A-Z Assignment - Dịch vụ hỗ trợ viết tiếng Anh học thuật</title>
+    <title>A-Z Assignment - Dịch vụ hỗ trợ viết học thuật tiếng Anh, tiếng Việt 24/7</title>
 
     <!-- Favicon -->
     
