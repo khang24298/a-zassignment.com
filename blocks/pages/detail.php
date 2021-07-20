@@ -26,8 +26,8 @@ capnhatluotxem($idTin);
                             <h2 class="post-title"><?php echo $chitiettin['Title']?></h2>
                             <!-- Post Meta -->
                             <div class="post-meta">
-                                <a href="#"><span>by</span> <?php echo $chitiettin['Author']?></a>
-                                <a href="#"><?php echo $chitiettin['SoLuotXem']?> <span>Views</span></a>
+                                <a href="#"><span>bởi</span> <?php echo $chitiettin['Author']?></a>
+                                <a href="#"><?php echo $chitiettin['SoLuotXem']?> <span>Lượt xem</span></a>
                             </div>
                         </div>
 
@@ -75,7 +75,7 @@ capnhatluotxem($idTin);
                             <!-- Related Post Area -->
                             <div class="related-posts clearfix">
                                 <!-- Headline -->
-                                <h4 class="headline">related posts</h4>
+                                <h4 class="headline">Bài viết cùng chuyên mục</h4>
 
                                 <div class="row">
                                     <?php 
@@ -110,7 +110,7 @@ capnhatluotxem($idTin);
                                 <h4 class="headline"><?php
                                         $count = comments ($idTin);
                                         $sotin = mysqli_num_rows ($count);
-                                        echo $sotin." COMMENTS"
+                                        echo $sotin." Bình luận"
                                     ?></h4>
                                 <ol>
                                     <!-- Single Comment Area -->
@@ -143,13 +143,13 @@ capnhatluotxem($idTin);
                             <!-- Leave A Comment -->
                             <div class="leave-comment-area clearfix">
                                 <div class="comment-form">
-                                    <h4 class="headline">Leave A Comment</h4>
+                                    <h4 class="headline">Để lại bình luận</h4>
 
                                     <!-- Comment Form -->
                                         <div class="row">
                                             <div class="col-12 col-md-6">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" id="contact-name" placeholder="Name" required>
+                                                    <input type="text" class="form-control" id="contact-name" placeholder="Tên" required>
                                                 </div>
                                             </div>
                                             <div class="col-12 col-md-6">
@@ -159,11 +159,11 @@ capnhatluotxem($idTin);
                                             </div>
                                             <div class="col-12">
                                                 <div class="form-group">
-                                                    <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Comment" required></textarea>
+                                                    <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Bình luận" required></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-12">
-                                                <button type="reset" id="btnSend" class="btn nikki-btn">Send</button>
+                                                <button type="reset" id="btnSend" class="btn nikki-btn">Gửi</button>
                                             </div>
                                         </div>
                                 </div>

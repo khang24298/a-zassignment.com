@@ -5,8 +5,8 @@
             <div class="col-12">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">About</li>
+                        <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Trang chủ</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Về Chúng tôi</li>
                     </ol>
                 </nav>
             </div>
@@ -22,7 +22,7 @@
                 <div class="about-content">
                     <!-- Section Heading -->
                     <div class="section-heading text-center">
-                        <h2>About Us</h2>
+                        <h2>Về chúng tôi</h2>
                     </div>
                     <img src="images/about_us.png" alt="">
                     <br>
