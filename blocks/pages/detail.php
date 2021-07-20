@@ -123,7 +123,7 @@ capnhatluotxem($idTin);
                                                 <div class="comment-wrapper d-flex">
                                                     <!-- Comment Meta -->
                                                     <div class="comment-author">
-                                                        <img src="img/download.png" alt="">
+                                                        <img src="images/download.png" alt="">
                                                     </div>
                                                     <!-- Comment Content -->
                                                     <div class="comment-content">
