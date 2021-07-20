@@ -125,7 +125,7 @@ $config['accessControl'][] = array(
 /*================================ Other Settings =====================================*/
 // https://ckeditor.com/docs/ckfinder/ckfinder3-php/configuration.html
 
-$config['overwriteOnUpload'] = false;
+$config['overwriteOnUpload'] = true;
 $config['checkDoubleExtension'] = true;
 $config['disallowUnsafeCharacters'] = false;
 $config['secureImageUploads'] = true;
@@ -137,7 +137,7 @@ $config['forceAscii'] = false;
 $config['xSendfile'] = false;
 
 // https://ckeditor.com/docs/ckfinder/ckfinder3-php/configuration.html#configuration_options_debug
-$config['debug'] = false;
+$config['debug'] = true;
 
 /*==================================== Plugins ========================================*/
 // https://ckeditor.com/docs/ckfinder/ckfinder3-php/configuration.html#configuration_options_plugins
