@@ -29,7 +29,7 @@
         <!-- Single Hero Post -->
         <div class="single-hero-post d-flex flex-wrap">
             <!-- Post Thumbnail -->
-            <div class="slide-post-thumbnail h-100 bg-img" style="background-image: url('upload/images/<?php echo $row['urlHinh']?>');"></div>
+            <div class="slide-post-thumbnail h-100 bg-img" style="background-image: url('<?php echo $row['urlHinh']?>');"></div>
             <!-- Post Content -->
             <div class="slide-post-content h-100 d-flex align-items-center">
                 <div class="slide-post-text">
@@ -73,7 +73,7 @@
                                     $tin1 = mysqli_fetch_array($tin1);
                                 ?>
                                 <div class="post-thumbnail mb-30">
-                                    <a href="?p=2&idTin=<?php echo $tin1['idTin']?>"><img src="upload/images/<?php echo $tin1['urlHinh']?>" alt="<?php echo $tin1['Title_KD']?>"></a>
+                                    <a href="?p=2&idTin=<?php echo $tin1['idTin']?>"><img src="<?php echo $tin1['urlHinh']?>" alt="<?php echo $tin1['Title_KD']?>"></a>
                                 </div>
                                 <!-- Featured Post Content -->
                                 <div class="featured-post-content">
@@ -117,7 +117,7 @@
                             <div class="single-blog-post mb-50">
                                 <!-- Thumbnail -->
                                 <div class="post-thumbnail">
-                                    <a href="?p=2&idTin=<?php echo $row2['idTin']?>"><img src="upload/images/<?php echo $row2['urlHinh']?>" alt="<?php echo $row2['Title_KD']?>"></a>
+                                    <a href="?p=2&idTin=<?php echo $row2['idTin']?>"><img src="<?php echo $row2['urlHinh']?>" alt="<?php echo $row2['Title_KD']?>"></a>
                                 </div>
                                 <!-- Content -->
                                 <div class="post-content">
@@ -214,7 +214,7 @@
                         ?>
                         <div class="single-latest-post d-flex">
                             <div class="post-thumb">
-                                <img src="upload/images/<?php echo $row3['urlHinh']?>" alt="<?php echo $row3['Title_KD']?>">
+                                <img src="<?php echo $row3['urlHinh']?>" alt="<?php echo $row3['Title_KD']?>">
                             </div>
                             <div class="post-content">
                                 <a href="?p=2&idTin=<?php echo $row3['idTin']?>" class="post-title">

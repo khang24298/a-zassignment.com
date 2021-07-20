@@ -33,7 +33,7 @@ capnhatluotxem($idTin);
 
                         <!-- Post Thumbnail -->
                         <div class="post-thumbnail mb-50 center">
-                            <img src="upload/images/<?php echo $chitiettin['urlHinh']?>" alt="<?php echo $chitiettin['Title_KD']?>">
+                            <img src="<?php echo $chitiettin['urlHinh']?>" alt="<?php echo $chitiettin['Title_KD']?>">
                         </div>
 
                         <!-- Post Text -->
@@ -87,7 +87,7 @@ capnhatluotxem($idTin);
                                         <div class="single-blog-post mb-50">
                                             <!-- Thumbnail -->
                                             <div class="post-thumbnail">
-                                                <a href="#"><img src="upload/images/<?php echo $row['urlHinh']?>" alt="<?php echo $row['Title_KD']?>"></a>
+                                                <a href="#"><img src="<?php echo $row['urlHinh']?>" alt="<?php echo $row['Title_KD']?>"></a>
                                             </div>
                                             <!-- Content -->
                                             <div class="post-content">
