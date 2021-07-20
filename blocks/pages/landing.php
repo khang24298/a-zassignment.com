@@ -344,11 +344,10 @@
 										<div class="banner-title">
 											<h1 class="font-weight-medium" style="font-size:5em">A-ZASSIGNMENT</h1>
 										</div>
-										<p class="mt-3">Dịch vụ hỗ trợ viết học thuật tiếng Anh 24/7 
- 
-
+										<p class="mt-3">
+											Dịch vụ hỗ trợ viết học thuật tiếng Anh, tiếng Việt 24/7
 											<br>
-											- Giải pháp hiệu quả cho tất cả các bài tập liên quan đến Tiếng Anh của bạn!
+											- Giải pháp tối ưu cho tất cả vấn đề học thuật liên quan đến tiếng Anh, tiếng Việt của bạn!
 										</p>
 										<a href="?p=2&idTin=119" class="btn btn-secondary mt-3">Chi tiết</a>
 									</div>
@@ -783,7 +782,7 @@
                         <div class="hotline-phone-ring-circle"></div>
                         <div class="hotline-phone-ring-img-circle">
                         <a href="https://zalo.me/0354488880" target="_blank" class="pps-btn-img zalo">
-                            <img class="zalo-icon" src="https://chanhtuoi.vn1.vdrive.vn/uploads/2020/10/logo-zalo.jpg" alt="Gọi điện thoại" width="50%">
+                            <img class="zalo-icon" src="https://netweb.vn/img/hotline/zalo.png" alt="Gọi điện thoại" width="50%">
                         </a>
                         </div>
                     </div>

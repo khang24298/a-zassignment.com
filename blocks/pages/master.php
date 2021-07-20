@@ -41,7 +41,7 @@
                         <h2><?php echo $row['Title']?></h2>
                     </a>
                     <p class="post-excerpt" data-animation="fadeIn" data-delay="500ms"><?php echo $row['TomTat']?></p>
-                    <a href="?p=2&idTin=<?php echo $row['idTin']?>" class="btn nikki-btn" data-animation="fadeIn" data-delay="700ms">Read More</a>
+                    <a href="?p=2&idTin=<?php echo $row['idTin']?>" class="btn nikki-btn" data-animation="fadeIn" data-delay="700ms">Đọc thêm</a>
                 </div>
                 <!-- Page Count -->
                 <div class="page-count"></div>
@@ -92,15 +92,12 @@
                                 <div class="post-meta d-flex align-items-center justify-content-between">
                                     <!-- Author Comments -->
                                     <div class="author-comments">
-                                        <a href="#"><span>by</span> <?php echo $tin1['Author']?></a>
-                                        <a href="#"><?php echo $tin1['SoLuotXem'] ?><span> Views</span></a>
+                                        <a href="#"><span>bởi</span> <?php echo $tin1['Author']?></a>
+                                        <a href="#"><?php echo $tin1['SoLuotXem'] ?><span> Lượt xem</span></a>
                                     </div>
                                     <!-- Social Info -->
                                     <div class="social-info">
-                                        <a href="https://facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                        <a href="https://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                        <a href="https://pinterest.com"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-                                        <a href="https://instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="https://www.facebook.com/vietthueluanvantienganh"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -164,7 +161,7 @@
                     <!-- ##### Single Widget Area ##### -->
                     <div class="single-widget-area mb-30">
                         <div class="widget-title">
-                            <h6>Categories</h6>
+                            <h6>Danh mục bài viết</h6>
                         </div>
                         <ol class="nikki-catagories">
                             <?php 
@@ -188,14 +185,13 @@
                     <div class="single-widget-area mb-30">
                         <!-- Title -->
                         <div class="widget-title">
-                            <h6>Subscribe &amp; Follow</h6>
+                            <h6>Theo dõi chúng tôi</h6>
                         </div>
                         <!-- Widget Social Info -->
                         <div class="widget-social-info text-center">
-                            <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
-                            <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/vietthueluanvantienganh"><i class="fa fa-facebook"></i></a>
                             <a href="https://instagram.com"><i class="fa fa-instagram"></i></a>
-                            <a href="https://pinterest.com"><i class="fa fa-pinterest"></i></a>
+                            <a href="https://pinterest.com"><i class="fa fa-whatsapp"></i></i></a>
                             <a href="https://linkedin.com"><i class="fa fa-linkedin"></i></a>
                         </div>
                     </div>
@@ -204,7 +200,7 @@
                     <div class="single-widget-area mb-30">
                         <!-- Title -->
                         <div class="widget-title">
-                            <h6>Latest Posts</h6>
+                            <h6>Bài viết mới nhất</h6>
                         </div>
 
                         <!-- Single Latest Posts -->
@@ -220,7 +216,7 @@
                                 <a href="?p=2&idTin=<?php echo $row3['idTin']?>" class="post-title">
                                     <h6><?php echo $row3['Title']?></h6>
                                 </a>
-                                <a class="post-author"><span>by</span> <?php echo $row3['Author']?></a>
+                                <a class="post-author"><span>bởi</span> <?php echo $row3['Author']?></a>
                             </div>
                         </div>
                         <?php
