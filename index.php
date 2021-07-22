@@ -55,7 +55,7 @@ else $p="";
 <!-- Header End -->
 
 <!-- Content Start -->
-    <div class="_body" style="margin-top:7em;">
+    <div class="_body" style="margin-top:4rem;">
         <?php
             switch ($p) {
                 case '0':

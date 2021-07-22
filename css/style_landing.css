@@ -12986,6 +12986,12 @@ input[type="button"].btn-block {
     margin-bottom: 0;
     margin-left: 15px;
   }
+  .pricing-box{
+    height:40rem!important;
+    margin-top: 10px !important;;
+    padding:5px !important;
+    overflow:auto;
+  }
 }
 
 .card-group {
@@ -18448,6 +18454,10 @@ h6, .h6 {
 @media (max-width: 991px) {
   .navbar .navbar-brand img {
     width: 150px;
+    margin-top:-1.1rem;
+  }
+  .navbar .navbar-toggler{
+    margin-top: -1.8rem;
   }
 }
 
@@ -18788,7 +18798,7 @@ section {
   -ms-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
-  height:46em;
+  height:36em;
 }
 .pricing-box img{
   width:6vw;

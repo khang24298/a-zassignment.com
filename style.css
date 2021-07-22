@@ -1881,11 +1881,12 @@ img {
     z-index: 5;
     padding-left: 10%;
     padding-right: 10%;
+    overflow: auto;
 }
 
 @media only screen and (max-width: 767px) {
     .single-post-details-area .post-content .post-text {
-        padding: 0 15%;
+        padding: 0!important;
     }
 }
 
@@ -2019,8 +2020,13 @@ img {
 
 @media only screen and (max-width: 479px) {
     .container {
-        width: 320px;
+        width: 350px;
         margin: 0 auto;
+    }
+
+    .ml-content {
+        margin-left: 0%;
+        min-height: 400px;
     }
 }
 
@@ -2466,65 +2472,13 @@ img {
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
     .mcd-menu {
-        width: 100px;
-        margin-left: -15%;
+        display:none;
     }
-
-    .mcd-menu li a {
-        height: 30px;
-        overflow: hidden;
+    .ml-content{
+        margin-left: 0;
     }
-
-    .mcd-menu li a i {
-        font-size: 22px;
-    }
-
-    .mcd-menu li a strong {
-        font-size: 12px;
-    }
-
-    .mcd-menu li a small {
-        font-size: 10px;
-    }
-
-    .mcd-menu li a.search input {
-        width: 120px;
-        font-size: 12px;
-    }
-
-    .mcd-menu li a.search buton {
-        padding: 8px 10px 9px 10px;
-    }
-
-    .mcd-menu li > ul {
-        min-width: 180px;
-    }
-
-    .mcd-menu li:hover > ul {
-        min-width: 180px;
-        left: 200px;
-    }
-
-    .mcd-menu li ul li > ul, .mcd-menu li ul li ul li > ul {
-        min-width: 150px;
-    }
-
-    .mcd-menu li ul li:hover > ul {
-        left: 180px;
-        min-width: 150px;
-    }
-
-    .mcd-menu li ul li ul li:hover > ul {
-        left: 150px;
-        min-width: 150px;
-    }
-
-    .mcd-menu li ul a {
-        font-size: 12px;
-    }
-
-    .mcd-menu li ul a i {
-        font-size: 14px;
+    .single-post-details-area .post-content .post-text {
+        padding: 10% 0;
     }
 }
 
@@ -2620,8 +2574,7 @@ img {
 
 @media only screen and (max-width: 479px) {
     .mcd-menu {
-        width: 50px;
-        overflow: hidden;
+        display: none;
     }
 
     .mcd-menu li a {
