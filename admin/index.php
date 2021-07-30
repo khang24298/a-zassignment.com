@@ -7,7 +7,7 @@ require "../lib/quantri.php";
 if(isset($_POST["btnLogin"]))
 {
 	$username = $_POST["username"];
-	$password = md5($_POST["password"]);
+	$password = $_POST["password"];
 	$user = dangnhap($username, $password);
 	if(mysqli_num_rows($user)== 1)
 	{
