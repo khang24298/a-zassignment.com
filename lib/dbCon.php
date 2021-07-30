@@ -5,7 +5,8 @@ $username = "admin";
 $password = "Cxhkt1998!";
 
 $mysqli = new mysqli($servername, $username, $password, $database);
-    
+// Specify connection timeout
+$mysqli->options(MYSQLI_OPT_CONNECT_TIMEOUT, 30);
   /* check connection */
   if (mysqli_connect_errno()) {
       printf("Connect failed: %s\n", mysqli_connect_error());
