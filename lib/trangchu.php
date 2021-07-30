@@ -6,7 +6,9 @@ function theloai(){
 			  WHERE AnHien = 1
 			";
 	require "dbCon.php";
-	return $result_menu = mysqli_query($con, $qrmenu);
+	$result_menu = mysqli_query($con, $qrmenu);
+	mysqli_close($con);
+	return $result_menu;
 }
 function theloai_order(){
 	$qr = "SELECT * FROM `category`
@@ -14,14 +16,18 @@ function theloai_order(){
 			ORDER BY ThuTu ASC
 			";
 	require "dbCon.php";
-	return $result = mysqli_query ($con, $qr);
+	$result = mysqli_query ($con, $qr);
+	mysqli_close($con);
+	return $result;
 }
 function count_tin($idTL){
 	$qr = "SELECT * FROM `tintuc`
 			WHERE idTL = $idTL
 			";
 	require "dbCon.php";
-	return $result = mysqli_query($con, $qr);
+	$result = mysqli_query($con, $qr);
+	mysqli_close($con);
+	return $result;
 }
 function tinmoinhat(){
 	$qrtinmoi = "SELECT * FROM `tintuc`
@@ -29,7 +35,9 @@ function tinmoinhat(){
 				LIMIT 0,5
 				";
 	require "dbCon.php";
-	return $result_tinmoi = mysqli_query($con, $qrtinmoi);
+	$result = mysqli_query($con, $qrtinmoi);
+	mysqli_close($con);
+	return $result;
 }
 function tinmaster(){
 	$qr = "SELECT * FROM `tintuc`
@@ -37,7 +45,9 @@ function tinmaster(){
 			LIMIT 0,3		
 	";
 	require "dbCon.php";
-	return $result_qr = mysqli_query($con, $qr);
+	$result = mysqli_query($con, $qr);
+	mysqli_close($con);
+	return $result;
 }
 function timTL($idTL)
 {
@@ -46,7 +56,9 @@ function timTL($idTL)
 		  ";
 	require "dbCon.php";
 	$result=mysqli_query($con,$qr);
-	return $result_final = mysqli_fetch_array($result);
+	$result = mysqli_fetch_array($result);
+	mysqli_close($con);
+	return $result;
 }
 function tinxemnhieu($from,$sotin1trang)
 {
@@ -54,8 +66,10 @@ function tinxemnhieu($from,$sotin1trang)
 				   ORDER BY SoLuotXem DESC
 				   LIMIT $from,$sotin1trang
 				   ";
-     require "dbCon.php";
-	 return $result_tinnhieu = mysqli_query($con, $qrtinnhieu);
+    require "dbCon.php";
+	$result = mysqli_query($con, $qrtinnhieu);
+	mysqli_close($con);
+	return $result;
 }
 function tin_theloai($idTL)
 {
@@ -65,14 +79,18 @@ function tin_theloai($idTL)
 				LIMIT 0,9
 				";
 	require "dbCon.php";
-	return $resulttin_tl = mysqli_query($con, $qrtin_tl);				
+	$result = mysqli_query($con, $qrtin_tl);
+	mysqli_close($con);
+	return $result;				
 }
 function DanhSachTinTuc(){
 	$qr = "SELECT * FROM `tintuc`
 			ORDER BY idTin DESC
 		  ";
 	require "dbCon.php";
-	return $result = mysqli_query($con, $qr);
+	$result = mysqli_query($con, $qr);
+	mysqli_close($con);
+	return $result;	
 }
 function tin_cungloai_het($idTL){
 	$qrtin_tl = "SELECT * FROM `tintuc`
@@ -80,7 +98,9 @@ function tin_cungloai_het($idTL){
 				ORDER BY ThuTu ASC
 				";
 	require "dbCon.php";
-	return $resulttin_tl = mysqli_query($con, $qrtin_tl);	
+	$result = mysqli_query($con, $qrtin_tl);	
+	mysqli_close($con);
+	return $result;	
 }
 function tin_cungloai($idTL){
 	$qrtin_tl = "SELECT * FROM `tintuc`
@@ -89,7 +109,9 @@ function tin_cungloai($idTL){
 				LIMIT 0,4
 				";
 	require "dbCon.php";
-	return $resulttin_tl = mysqli_query($con, $qrtin_tl);
+	$result = mysqli_query($con, $qrtin_tl);
+	mysqli_close($con);
+	return $result;	
 }
 function chitiettin($idTin)
 {
@@ -98,7 +120,9 @@ function chitiettin($idTin)
 			  ";
 	require "dbCon.php";
 	$resulttin = mysqli_query($con,$qrtin);
-	return $fetch = mysqli_fetch_array($resulttin);
+	$result = mysqli_fetch_array($resulttin);
+	mysqli_close($con);
+	return $result;	
 }
 function timtin($idTin)
 {
@@ -107,7 +131,9 @@ function timtin($idTin)
 			  ";
 	require "dbCon.php";
 	$resulttin = mysqli_query($con,$qrtin);
-	return $result = mysqli_fetch_array($resulttin);
+	$result = mysqli_fetch_array($resulttin);
+	mysqli_close($con);
+	return $result;	
 }
 function capnhatluotxem($idTin)
 {
@@ -117,6 +143,8 @@ function capnhatluotxem($idTin)
 		   ";
 	require "dbCon.php";
 	mysqli_query($con, $qr);
+	mysqli_close($con);
+	return;	
 }
 function tin_loaitin_phantrang($idTL, $from, $sotin1trang)
 {
@@ -126,7 +154,9 @@ function tin_loaitin_phantrang($idTL, $from, $sotin1trang)
 				LIMIT $from, $sotin1trang
 				";
 	require "dbCon.php";
-	return $resulttin_lt = mysqli_query($con, $qrtin_lt);
+	$result = mysqli_query($con, $qrtin_lt);
+	mysqli_close($con);
+	return $result;	
 }
 function insert_comments($user,$user_email,$content, $idTin)
 {
@@ -134,6 +164,8 @@ function insert_comments($user,$user_email,$content, $idTin)
 			VALUES (null,'$content','$idTin','$user','$user_email',NOW())";
 	require "dbCon.php";
 	mysqli_query ($con, $qr);
+	mysqli_close($con);
+	return;	
 }
 function comments($idTin)
 {
@@ -141,7 +173,9 @@ function comments($idTin)
 		WHERE idTin = $idTin
 		";
 	require "dbCon.php";
-	return $result = mysqli_query($con, $qr);
+	$result = mysqli_query($con, $qr);
+	mysqli_close($con);
+	return $result;	
 }
 function reply_comments($idCom)
 {
@@ -149,7 +183,9 @@ function reply_comments($idCom)
 			WHERE idCom = $idCom
 			";
 	require  "dbCon.php";
-	return $result = mysqli_query($con, $qr);
+	$result = mysqli_query($con, $qr);
+	mysqli_close($con);
+	return $result;	
 }
 function check_quotes($stri){
 	if (strstr($stri,"'"))
@@ -207,7 +243,9 @@ function storeReview($params)
 			VALUES (null,'$name', '$email','$content','$star','$now','$now','$show')
 			";
     require "dbCon.php";
-    return $result = mysqli_query($con, $qr);
+    $result = mysqli_query($con, $qr);
+	mysqli_close($con);
+	return $result;	
 }
 // Get Rating
 function getReviews()
@@ -215,14 +253,18 @@ function getReviews()
 	$qr = "SELECT * FROM `reviews` 
 			WHERE isShow = 1";
 	require "dbCon.php";
-	return $result = mysqli_query($con, $qr);
+	$result = mysqli_query($con, $qr);
+	mysqli_close($con);
+	return $result;	
 }
 
 // Get feedbacks
 function getFeedbacks(){
 	$qr = "SELECT * FROM `feedbacks` WHERE isShow = 1";
 	require "dbCon.php";
-	return $result = mysqli_query($con, $qr);
+	$result = mysqli_query($con, $qr);
+	mysqli_close($con);
+	return $result;	
 }
 
 ?>

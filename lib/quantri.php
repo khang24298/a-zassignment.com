@@ -44,12 +44,16 @@ function vn_to_str($str)
 }
 function dangnhap($username, $password)
 {
+	
 	$qr = "SELECT * FROM `admins`
 		   WHERE username = '$username'
-		   AND password = '$password'
+		   AND password = '$password' 
 		   ";
+
 	require "dbCon.php";
-	return $result = mysqli_query($con, $qr);
+	$result = mysqli_query($con, $qr);
+	mysqli_close($con);
+	return $result;
 }
 //The Loai
 function DanhSachTheLoai()
@@ -57,7 +61,9 @@ function DanhSachTheLoai()
 	$qr = "SELECT * FROM `category`
 		  ";
 	require "dbCon.php";
-	return $result = mysqli_query($con, $qr);
+	$result = mysqli_query($con, $qr);
+	mysqli_close($con);
+	return $result;
 }
 function themTheLoai($TenTL, $TenTL_KD, $AnHien,$ThuTu)
 {
@@ -65,7 +71,9 @@ function themTheLoai($TenTL, $TenTL_KD, $AnHien,$ThuTu)
 			VALUES (null,'$TenTL', '$TenTL_KD', '$AnHien','$ThuTu')
 			";
 	require "dbCon.php";
-	mysqli_query($con, $qr);
+	$result = mysqli_query($con, $qr);
+	mysqli_close($con);
+	return $result;
 }
 function timTL($idTL)
 {
@@ -74,7 +82,9 @@ function timTL($idTL)
 		  ";
 	require "dbCon.php";
 	$result=mysqli_query($con,$qr);
-	return $result_final = mysqli_fetch_array($result);
+	$result_final = mysqli_fetch_array($result);
+	mysqli_close($con);
+	return $result_final;
 }
 function suaTheLoai($idTL,$TenTL, $TenTL_KD,$AnHien, $ThuTu)
 {	
@@ -84,6 +94,7 @@ function suaTheLoai($idTL,$TenTL, $TenTL_KD,$AnHien, $ThuTu)
 		  ";
 	require "dbCon.php";
 	mysqli_query($con, $qr);
+	mysqli_close($con);
 }
 function xoaTheLoai($idTL)
 {
@@ -92,13 +103,16 @@ function xoaTheLoai($idTL)
 		  ";
 	require "dbCon.php";
 	mysqli_query($con, $qr);
+	mysqli_close($con);
 }
 // Quản lý tin tức
 function DanhSachTinTuc(){
 	$qr = "SELECT * FROM `tintuc`
 		  ";
 	require "dbCon.php";
-	return $result = mysqli_query($con, $qr);
+	$result = mysqli_query($con, $qr);
+	mysqli_close($con);
+	return $result;
 }
 function themTinTuc($Title, $Title_KD,$TomTat, $Content, $idTL, $urlHinh,$Author,$ThuTu)
 {
@@ -107,6 +121,8 @@ function themTinTuc($Title, $Title_KD,$TomTat, $Content, $idTL, $urlHinh,$Author
 			";
 	require "dbCon.php";
 	mysqli_query($con, $qr);
+	mysqli_close($con);
+	
 }
 function timtin($idTin)
 {
@@ -115,7 +131,9 @@ function timtin($idTin)
 			  ";
 	require "dbCon.php";
 	$resulttin = mysqli_query($con,$qrtin);
-	return $result = mysqli_fetch_array($resulttin);
+	$result = mysqli_fetch_array($resulttin);
+	mysqli_close($con);
+	return $result;
 }
 function tim_tl($idTL)
 {
@@ -124,7 +142,9 @@ function tim_tl($idTL)
 				WHERE `category`.idTL = $idTL
 				";
 	require "dbCon.php";
-	return $result_tl = mysqli_query($con, $qrtim_tl);
+	$result_tl = mysqli_query($con, $qrtim_tl);
+	mysqli_close($con);
+	return $result_tl;
 }
 function DanhSachTheLoai_Except($idTL)
 {
@@ -132,7 +152,9 @@ function DanhSachTheLoai_Except($idTL)
 		   WHERE idTL <> $idTL
 		  ";
 	require "dbCon.php";
-	return $result = mysqli_query($con, $qr);
+	$result = mysqli_query($con, $qr);
+	mysqli_close($con);
+	return $result;
 }
 function suaTinTuc($Title,$Title_KD,$TomTat,$Content,$idTL,$urlHinh,$ThuTu, $SoLuotXem,$Author,$idTin)
 {
@@ -142,6 +164,8 @@ function suaTinTuc($Title,$Title_KD,$TomTat,$Content,$idTL,$urlHinh,$ThuTu, $SoL
 			";
     require "dbCon.php";
     mysqli_query($con, $qr);
+	mysqli_close($con);
+
 }
 function xoaTinTuc($idTin)
 {
@@ -150,6 +174,8 @@ function xoaTinTuc($idTin)
 		  ";
 	require "dbCon.php";
 	mysqli_query($con, $qr);
+	mysqli_close($con);
+
 }
 function check_quotes($str)
 {
@@ -179,14 +205,18 @@ function storeReview($params)
 	var_dump($qr);
 	die();
     require "dbCon.php";
-    return $result = mysqli_query($con, $qr);
+    $result = mysqli_query($con, $qr);
+	mysqli_close($con);
+	return $result;
 }
 // Get Rating
 function getReviews()
 {
 	$qr = "SELECT * FROM `reviews`";
 	require "dbCon.php";
-	return $result = mysqli_query($con, $qr);
+	$result = mysqli_query($con, $qr);
+	mysqli_close($con);
+	return $result;
 }
 // Edit review
 function saveReview($id, $params)
@@ -218,7 +248,9 @@ function saveReview($id, $params)
 		}
 	}
     require "dbCon.php";
-    return $result = mysqli_query($con, $qr);
+    $result = mysqli_query($con, $qr);
+	mysqli_close($con);
+	return $result;
 }
 // Xoá reviews
 function delReview($id)
@@ -227,14 +259,18 @@ function delReview($id)
 		  WHERE id = $id
 		  ";
 	require "dbCon.php";
-	return $result = mysqli_query($con, $qr);
+	$result = mysqli_query($con, $qr);
+	mysqli_close($con);
+	return $result;
 }
 
 // Get feedbacks
 function getFeedbacks(){
 	$qr = "SELECT * FROM `feedbacks`";
 	require "dbCon.php";
-	return $result = mysqli_query($con, $qr);
+	$result = mysqli_query($con, $qr);
+	mysqli_close($con);
+	return $result;
 }
 
 // Store Image
@@ -243,14 +279,18 @@ function storeImageFeedback($urlImage){
 	VALUES(null,'$urlImage',null,null,0)
 	";
 	require "dbCon.php";
-	return $result = mysqli_query($con, $qr);
+	$result = mysqli_query($con, $qr);
+	mysqli_close($con);
+	return $result;
 }
 
 function updateFeedback($id,$isShow){
 	$qr = "UPDATE `feedbacks`
 			SET isShow = $isShow WHERE id = $id";
 	require "dbCon.php";
-	return $result = mysqli_query($con, $qr);
+	$result = mysqli_query($con, $qr);
+	mysqli_close($con);
+	return $result;
 }
 
 function delFeedback($id)
@@ -259,7 +299,9 @@ function delFeedback($id)
 		  WHERE id = $id
 		  ";
 	require "dbCon.php";
-	return $result = mysqli_query($con, $qr);
+	$result = mysqli_query($con, $qr);
+	mysqli_close($con);
+	return $result;
 }
 
 ?>

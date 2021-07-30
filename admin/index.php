@@ -9,6 +9,9 @@ if(isset($_POST["btnLogin"]))
 	$username = $_POST["username"];
 	$password = $_POST["password"];
 	$user = dangnhap($username, $password);
+	// var_dump($user);
+
+	// die();
 	if(mysqli_num_rows($user)== 1)
 	{
 		$row = mysqli_fetch_array($user);
