@@ -68,13 +68,13 @@
                         <div class="col-12">
                             <div class="featured-post-area mb-50">
                                 <!-- Thumbnail -->
-                                <?php 
+                                <!-- <?php 
                                     $tin1 = tinmaster();
                                     $tin1 = mysqli_fetch_array($tin1);
                                 ?>
                                 <div class="post-thumbnail mb-30">
                                     <a href="?p=2&idTin=<?php echo $tin1['idTin']?>"><img src="<?php echo $tin1['urlHinh']?>" alt="<?php echo $tin1['Title_KD']?>"></a>
-                                </div>
+                                </div> -->
                                 <!-- Featured Post Content -->
                                 <div class="featured-post-content">
                                     <p class="post-date"> 

@@ -1,8 +1,8 @@
 <?php
-$servername = "azassignment.crm9yo3gf2n6.us-east-2.rds.amazonaws.com";
-$database = "a_zassignment";
-$username = "admin";
-$password = "Cxhkt1998!";
+$servername = "127.0.0.1";
+$database = "thenikki";
+$username = "root";
+$password = "";
 
 $con = new mysqli($servername, $username, $password, $database);
 
