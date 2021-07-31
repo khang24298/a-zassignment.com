@@ -192,6 +192,7 @@ function check_quotes($str)
 // Create Reviews
 function storeReview($params)
 {
+	$now = date('Y-m-d H:i:s');
 	extract($params);
 	if(isset($isShow)){
 		$show = ($isShow == "on" ? 1 : 0);
@@ -200,7 +201,7 @@ function storeReview($params)
 		$show = 0;
 	}
 	$qr = "INSERT INTO `reviews`
-			VALUES (null,'$name', '$email','$content','$star',null,null,'$show')
+			VALUES (null,'$name', '$email','$content','$star','$now','$now','$show')
 			";
 
     require "dbCon.php";
