@@ -1807,19 +1807,19 @@ img {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .single-post-details-area {
-        padding: 70px 50px;
+        padding: 30px 20px;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .single-post-details-area {
-        padding: 50px;
+        padding: 30px;
     }
 }
 
 @media only screen and (max-width: 767px) {
     .single-post-details-area {
-        padding: 50px 20px;
+        padding: 30px 20px;
     }
 }
 
@@ -2007,21 +2007,21 @@ img {
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
     .container {
-        width: 682px;
+        max-width: 740px!important;
     }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .container {
-        width: 428px;
+        max-width: 680px!important;
         margin: 0 auto;
     }
 }
 
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 540px) {
     .container {
-        width: 350px;
-        margin: 0 auto;
+        width: 100%;
+        padding:0!important;
     }
 
     .ml-content {
@@ -2343,9 +2343,13 @@ img {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1125px) {
+    .single-post-details-area .post-content .post-text{
+        padding-left:5%;
+        padding-right: 5%;
+    }
     .mcd-menu {
-        width: 150px;
-        margin-left: -13%;
+        width: 160px;
+        margin-left: -4%;
     }
 
     .mcd-menu li a {

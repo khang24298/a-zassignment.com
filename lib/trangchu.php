@@ -41,7 +41,7 @@ function tinmoinhat(){
 }
 function tinmaster(){
 	$qr = "SELECT * FROM `tintuc`
-			ORDER BY idTin DESC
+			ORDER BY SoLuotXem DESC
 			LIMIT 0,3		
 	";
 	require "dbCon.php";
