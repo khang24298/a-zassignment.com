@@ -178,11 +178,6 @@
                 -webkit-transform: rotate(0) scale(1) skew(1deg);
             }
             }
-            @media (max-width: 768px) {
-            .hotline-bar {
-                display: none;
-            }
-            }
             .zalo-icon{
                 width: 35px !important;
                 height: 35px !important;
