@@ -1,0 +1,12 @@
+{
+    "name": "mac/thenikki",
+    "authors": [
+        {
+            "name": "khang24298",
+            "email": "khangnguyen24298@gmail.com"
+        }
+    ],
+    "require": {
+        "ext-gd":"*"
+    }
+}
